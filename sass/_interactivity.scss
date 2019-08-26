@@ -1,0 +1,61 @@
+
+
+$cursors: (
+    auto,
+    default,
+    pointer,
+    wait,
+    text,
+    move,
+    not-allowed,
+);
+
+@include breakpoint-loop() {
+
+    .appearance-none#{$breakpoint-suffix} {
+        appearance: none;
+    }
+
+    @each $cursor in $cursors {
+        .cursor-#{$cursor}#{$breakpoint-suffix} {
+            cursor: #{$cursor};
+        }
+    }
+
+    .outline-none#{$breakpoint-suffix} {
+        outline: 0;
+    }
+
+    .pointer-events-none#{$breakpoint-suffix} {
+        pointer-events: none;
+    }
+    .pointer-events-auto#{$breakpoint-suffix} {
+        pointer-events: auto;
+    }
+
+    .resize-none#{$breakpoint-suffix} {
+        resize: none;
+    }
+    .resize#{$breakpoint-suffix} {
+        resize: both;
+    }
+    .resize-y#{$breakpoint-suffix} {
+        resize: vertical;
+    }
+    .resize-x#{$breakpoint-suffix} {
+        resize: horizontal;
+    }
+
+    .select-none#{$breakpoint-suffix} {
+        user-select: none;
+    }
+    .select-text#{$breakpoint-suffix} {
+        user-select: text;
+    }
+    .select-all#{$breakpoint-suffix} {
+        user-select: all;
+    }
+    .select-auto#{$breakpoint-suffix} {
+        user-select: auto;
+    }
+}

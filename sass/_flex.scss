@@ -1,0 +1,132 @@
+$flex-direction: (
+    'flex-row': 'row',
+    'flex-row-reverse': 'row-reverse',
+    'flex-col': 'col',
+    'flex-col-reverse': 'col-reverse',
+);
+
+$flex-wrap: (
+    'flex-no-wrap': 'nowrap',
+    'flex-wrap': 'wrap',
+    'flex-wrap-reverse': 'wrap-reverse',
+);
+
+$align-items: (
+    'items-stretch': 'stretch',
+    'items-start': 'flex-start',
+    'items-center': 'center',
+    'items-end': 'flex-end',
+    'items-baseline': 'baseline',
+);
+
+$align-content: (
+    'content-start': 'flex-start',
+    'content-center': 'center',
+    'content-end': 'flex-end',
+    'content-between': 'space-between',
+    'content-around': 'space-around',
+);
+
+$align-self: (
+    'self-auto': 'auto',
+    'self-start': 'flex-start',
+    'self-center': 'center',
+    'self-end': 'flex-end',
+    'self-stretch': 'stretch',
+);
+
+$justify-content: (
+    'justify-start': 'flex-start',
+    'justify-center': 'center',
+    'justify-end': 'flex-end',
+    'justify-between': 'space-between',
+    'justify-around': 'space-around',
+);
+
+$flex: (
+    'flex-initial': 0 1 auto,
+    'flex-1': 1 1 0%,
+    'flex-auto': 1 1 auto,
+    'flex-none': none,
+);
+
+$flex-grow: (
+    'flex-grow': 1,
+    'flex-grow-0': 0,
+);
+
+$flex-shrink: (
+    'flex-shrink': 1,
+    'flex-shrink-0': 0,
+);
+
+$order: (
+    'first': -9999,
+    'last': 9999,
+    'none': 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    10: 10,
+    11: 11,
+    12: 12,
+);
+
+@include breakpoint-loop() {
+    @each $key, $value in $flex-direction {
+        .#{$key}#{$breakpoint-suffix} {
+            flex-direction: #{$value};
+        }
+    }
+    @each $key, $value in $flex-wrap {
+        .#{$key}#{$breakpoint-suffix} {
+            flex-wrap: #{$value};
+        }
+    }
+    @each $key, $value in $align-items {
+        .#{$key}#{$breakpoint-suffix} {
+            align-items: #{$value};
+        }
+    }
+    @each $key, $value in $align-content {
+        .#{$key}#{$breakpoint-suffix} {
+            align-content: #{$value};
+        }
+    }
+    @each $key, $value in $align-self {
+        .#{$key}#{$breakpoint-suffix} {
+            align-self: #{$value};
+        }
+    }
+    @each $key, $value in $justify-content {
+        .#{$key}#{$breakpoint-suffix} {
+            justify-content: #{$value};
+        }
+    }
+    @each $key, $value in $flex {
+        .#{$key}#{$breakpoint-suffix} {
+            flex: #{$value};
+        }
+    }
+    @each $key, $value in $flex-grow {
+        .#{$key}#{$breakpoint-suffix} {
+            flex-grow: #{$value};
+        }
+    }
+    @each $key, $value in $flex-shrink {
+        .#{$key}#{$breakpoint-suffix} {
+            flex-shrink: #{$value};
+        }
+    }
+    @each $key, $value in $order {
+        .order-#{$key}#{$breakpoint-suffix} {
+            order: #{$value};
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@include breakpoint-loop() {
+    @each $index in $z-indexes {
+        .z-#{$index}#{$breakpoint-suffix} {
+            z-index: #{$index};
+        }
+    }
+}

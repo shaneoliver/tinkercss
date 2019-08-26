@@ -1,0 +1,68 @@
+@include breakpoint-loop() {
+    .bg-fixed#{$breakpoint-suffix} {
+        background-attachment: fixed;
+    }
+    .bg-local#{$breakpoint-suffix} {
+        background-attachment: local;
+    }
+    .bg-scroll#{$breakpoint-suffix} {
+        background-attachment: scroll;
+    }
+
+    .bg-bottom#{$breakpoint-suffix} {
+        background-position: bottom;
+    }
+    .bg-center#{$breakpoint-suffix} {
+        background-position: center;
+    }
+    .bg-left#{$breakpoint-suffix} {
+        background-position: left;
+    }
+    .bg-left-bottom #{$breakpoint-suffix}{
+        background-position: left bottom;
+    }
+    .bg-left-top#{$breakpoint-suffix} {
+        background-position: left top;
+    }
+    .bg-right#{$breakpoint-suffix} {
+        background-position: right;
+    }
+    .bg-right-bottom#{$breakpoint-suffix} {
+        background-position: right bottom;
+    }
+    .bg-right-top#{$breakpoint-suffix} {
+        background-position: right top;
+    }
+    .bg-top#{$breakpoint-suffix} {
+        background-position: top;
+    }
+
+    .bg-repeat#{$breakpoint-suffix} { 
+        background-repeat: repeat;
+    }
+    .bg-no-repeat#{$breakpoint-suffix} { 
+        background-repeat: no-repeat;
+    }
+    .bg-repeat-x#{$breakpoint-suffix} { 
+        background-repeat: repeat-x;
+    }
+    .bg-repeat-y#{$breakpoint-suffix} { 
+        background-repeat: repeat-y;
+    }
+    .bg-repeat-round#{$breakpoint-suffix} { 
+        background-repeat: round;
+    }
+    .bg-repeat-space#{$breakpoint-suffix} { 
+        background-repeat: space;
+    }
+
+    .bg-auto#{$breakpoint-suffix} {
+        background-size: auto;
+    }
+    .bg-cover#{$breakpoint-suffix} {
+        background-size: cover;
+    }
+    .bg-contain#{$breakpoint-suffix} {
+        background-size: contain;
+    }
+}

@@ -1,0 +1,14 @@
+@include breakpoint-loop() {
+    @each $float in $floats {
+        .float-#{$float}#{$breakpoint-suffix} {
+            float: #{$float};
+        }
+    }
+    .clearfix#{$breakpoint-suffix} {
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+}

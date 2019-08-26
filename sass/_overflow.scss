@@ -1,0 +1,19 @@
+@include breakpoint-loop() {
+    @each $overflow in $overflows {
+        .overflow-#{$overflow}#{$breakpoint-suffix} {
+            overflow: #{$overflow};
+        }
+        .overflow-#{$overflow}-x#{$breakpoint-suffix} {
+            overflow-x: #{$overflow};
+        }
+        .overflow-#{$overflow}-y#{$breakpoint-suffix} {
+            overflow-y: #{$overflow};
+        }
+    }
+    .scrolling-touch#{$breakpoint-suffix} {
+        -webkit-overflow-scrolling: touch;
+    }
+    .scrolling-auto#{$breakpoint-suffix} {
+        -webkit-overflow-scrolling: auto;
+    }
+}

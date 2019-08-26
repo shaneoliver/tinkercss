@@ -1,0 +1,91 @@
+@include breakpoint-loop() {
+    @each $padding, $value in $paddings {
+        // Top
+        .p-#{$padding}#{$breakpoint-suffix},
+        .pt-#{$padding}#{$breakpoint-suffix},
+        .py-#{$padding}#{$breakpoint-suffix} {
+            padding-top: $value;
+        }
+
+        // Bottom
+        .p-#{$padding}#{$breakpoint-suffix},
+        .pb-#{$padding}#{$breakpoint-suffix},
+        .py-#{$padding}#{$breakpoint-suffix} {
+            padding-bottom: $value;
+        }
+
+        // Left
+        .p-#{$padding}#{$breakpoint-suffix},
+        .pl-#{$padding}#{$breakpoint-suffix},
+        .px-#{$padding}#{$breakpoint-suffix} {
+            padding-left: $value;
+        }
+
+        // Right
+        .p-#{$padding}#{$breakpoint-suffix},
+        .pr-#{$padding}#{$breakpoint-suffix},
+        .px-#{$padding}#{$breakpoint-suffix} {
+            padding-right: $value;
+        }
+    }
+
+    @each $margin, $value in $margins {
+        // Top
+        .m-#{$margin}#{$breakpoint-suffix},
+        .mt-#{$margin}#{$breakpoint-suffix},
+        .my-#{$margin}#{$breakpoint-suffix} {
+            margin-top: $value;
+        }
+
+        // Bottom
+        .m-#{$margin}#{$breakpoint-suffix},
+        .mb-#{$margin}#{$breakpoint-suffix},
+        .my-#{$margin}#{$breakpoint-suffix} {
+            margin-bottom: $value;
+        }
+
+        // Left
+        .m-#{$margin}#{$breakpoint-suffix},
+        .ml-#{$margin}#{$breakpoint-suffix},
+        .mx-#{$margin}#{$breakpoint-suffix} {
+            margin-left: $value;
+        }
+
+        // Right
+        .m-#{$margin}#{$breakpoint-suffix},
+        .mr-#{$margin}#{$breakpoint-suffix},
+        .mx-#{$margin}#{$breakpoint-suffix} {
+            margin-right: $value;
+        }
+    }
+
+    @each $margin, $value in $paddings {
+        // Top
+        .-m-#{$margin}#{$breakpoint-suffix},
+        .-mt-#{$margin}#{$breakpoint-suffix},
+        .-my-#{$margin}#{$breakpoint-suffix} {
+            margin-top: -$value;
+        }
+
+        // Bottom
+        .-m-#{$margin}#{$breakpoint-suffix},
+        .-mb-#{$margin}#{$breakpoint-suffix},
+        .-my-#{$margin}#{$breakpoint-suffix} {
+            margin-bottom: -$value;
+        }
+
+        // Left
+        .-m-#{$margin}#{$breakpoint-suffix},
+        .-ml-#{$margin}#{$breakpoint-suffix},
+        .-mx-#{$margin}#{$breakpoint-suffix} {
+            margin-left: -$value;
+        }
+
+        // Right
+        .-m-#{$margin}#{$breakpoint-suffix},
+        .-mr-#{$margin}#{$breakpoint-suffix},
+        .-mx-#{$margin}#{$breakpoint-suffix} {
+            margin-right: -$value;
+        }
+    }
+}

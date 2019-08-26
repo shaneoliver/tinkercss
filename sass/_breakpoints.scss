@@ -1,0 +1,33 @@
+$breakpoint-suffix: null;
+
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
+    $minimum: map-get($breakpoints, $name);
+
+    @return if($minimum != 0, $minimum, null);
+}
+
+@function breakpoint-suffix($name, $breakpoints: $breakpoints) {
+    @return if(breakpoint-min($name) == null, '', '\\@#{$name}');
+}
+
+@mixin breakpoint-up($name, $breakpoints: $breakpoints) {
+    $minimum: breakpoint-min($name, $breakpoints);
+
+    $breakpoint-suffix: breakpoint-suffix($name, $breakpoints) !global;
+
+    @if $minimum {
+        @media (min-width: $minimum) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin breakpoint-loop() {
+    @each $breakpoint, $width in $breakpoints {
+        @include breakpoint-up($breakpoint, $breakpoints) {
+            @content;
+        }
+    }
+}

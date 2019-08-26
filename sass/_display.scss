@@ -1,0 +1,14 @@
+@include breakpoint-loop() {
+    @each $display, $value in $displays {
+        .#{$display}#{$breakpoint-suffix} {
+            display: #{$value};
+        }
+    }
+
+    .visible#{$breakpoint-suffix} {
+        visibility: visible;
+    }
+    .invisible#{$breakpoint-suffix} {
+        visibility: hidden;
+    }
+}

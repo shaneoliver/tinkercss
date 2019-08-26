@@ -1,0 +1,14 @@
+@include breakpoint-loop() {
+    .border-collapse#{$breakpoint-suffix} {
+        border-collapse: collapse;
+    }
+    .border-separate#{$breakpoint-suffix} {
+        border-collapse: separate;
+    }
+    .table-auto#{$breakpoint-suffix} {
+        table-layout: auto;
+    }
+    .table-fixed#{$breakpoint-suffix} {
+        table-layout: fixed;
+    }
+}

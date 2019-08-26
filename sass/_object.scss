@@ -1,0 +1,13 @@
+@include breakpoint-loop() {
+    @each $fit in $object-fits {
+        .object-#{$fit}#{$breakpoint-suffix} {
+            object-fit: #{$fit};
+        }
+    }
+
+    @each $position, $value in $object-positions {
+        .object-#{$position}#{$breakpoint-suffix} {
+            object-position: #{$value};
+        }
+    }
+}
