@@ -1,15 +1,69 @@
-@include breakpoint-loop() {
+@include breakpoint-loop($text-color-variants) {
     @each $color, $value in $colors {
-        @each $prop, $abbrev in ('color': 'text', 'background-color': 'bg') {
-            .#{$abbrev}-#{$color}#{$breakpoint-suffix} {
-                #{$prop}: $value;
+        
+        .text-#{$color} {
+            @if index($text-color-variants, responsive) {
+                &#{$breakpoint-suffix} {
+                    color: $value;
+                }
+            }
+
+            @if index($text-color-variants, hover) {
+                &\:hover#{$breakpoint-suffix}:hover {
+                    color: $value;
+                }
             }
         }
+    }
+}
+
+@include breakpoint-loop($bg-color-variants) {
+    @each $color, $value in $colors {
+
+        .bg-#{$color} {
+            &#{$breakpoint-suffix} {
+                background-color: $value;
+            }
+
+            @if index($bg-color-variants, hover) {
+                &\:hover#{$breakpoint-suffix}:hover {
+                    background-color: $value;
+                }
+            }
+        }
+
         .placeholder-#{$color}#{$breakpoint-suffix}::placeholder {
             color: $value;
         }
     }
 
+    .fill-current#{$breakpoint-suffix} {
+        fill: currentColor;
+    }
+
+    .stroke-current#{$breakpoint-suffix} {
+        stroke: currentColor;
+    }
+}
+
+
+@include breakpoint-loop() {
+    @each $color, $value in $colors {
+        .placeholder-#{$color}#{$breakpoint-suffix}::placeholder {
+            color: $value;
+        }
+    }
+
+    .fill-current#{$breakpoint-suffix} {
+        fill: currentColor;
+    }
+
+    .stroke-current#{$breakpoint-suffix} {
+        stroke: currentColor;
+    }
+}
+
+@include breakpoint-loop() {
     .fill-current#{$breakpoint-suffix} {
         fill: currentColor;
     }

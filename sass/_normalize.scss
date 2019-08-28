@@ -347,3 +347,13 @@ template {
 [hidden] {
     display: none;
 }
+
+/**
+* Add a border to all elements
+*/
+
+*,
+::after,
+::before {
+    border: 0 solid #DADDE0;
+}

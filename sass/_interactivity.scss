@@ -1,15 +1,3 @@
-
-
-$cursors: (
-    auto,
-    default,
-    pointer,
-    wait,
-    text,
-    move,
-    not-allowed,
-);
-
 @include breakpoint-loop() {
 
     .appearance-none#{$breakpoint-suffix} {

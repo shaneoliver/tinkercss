@@ -24,10 +24,15 @@ $breakpoint-suffix: null;
     }
 }
 
-@mixin breakpoint-loop() {
-    @each $breakpoint, $width in $breakpoints {
-        @include breakpoint-up($breakpoint, $breakpoints) {
-            @content;
+@mixin breakpoint-loop($variants: null) {
+    @if (contains($variants, responsive)) {
+        @each $breakpoint, $width in $breakpoints {
+            @include breakpoint-up($breakpoint, $breakpoints) {
+                @content;
+            }
         }
+    } @else {
+        $breakpoint-suffix: '' !global;
+        @content;
     }
 }
