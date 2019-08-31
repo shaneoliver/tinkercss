@@ -13,7 +13,7 @@
 }
 
 @mixin create-classes($class, $attr, $value, $variants, $pseudo: '') {
-    .#{$class} {
+    #{$class} {
         &#{$breakpoint-suffix}#{$pseudo} {
             #{$attr}: $value;
         }

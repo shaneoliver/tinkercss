@@ -1,63 +1,15 @@
-@include breakpoint-loop() {
-    @each $position in $positions {
-        .#{$position}#{$breakpoint-suffix} {
-            position: #{$position};
-        }
+@include breakpoint-loop($position-variants) {
+    @each $value in $positions {
+        @include create-classes('.position-#{$value}', position, $value, $position-variants);
     }
 
-    // Top
-    .pin#{$breakpoint-suffix},
-    .pin-t#{$breakpoint-suffix},
-    .pin-y#{$breakpoint-suffix} {
-        top: 0;
-    }
+    @include create-classes(('.pin','.pin-t','.pin-y'), top, 0, $position-variants);
+    @include create-classes(('.pin','.pin-b','.pin-y'), bottom, 0, $position-variants);
+    @include create-classes(('.pin','.pin-l','.pin-x'), left, 0, $position-variants);
+    @include create-classes(('.pin','.pin-r','.pin-x'), right, 0, $position-variants);
 
-    // Bottom
-    .pin#{$breakpoint-suffix},
-    .pin-b#{$breakpoint-suffix},
-    .pin-y#{$breakpoint-suffix} {
-        bottom: 0;
-    }
-
-    // Left
-    .pin#{$breakpoint-suffix},
-    .pin-l#{$breakpoint-suffix},
-    .pin-x#{$breakpoint-suffix} {
-        left: 0;
-    }
-    
-    // Left
-    .pin#{$breakpoint-suffix},
-    .pin-r#{$breakpoint-suffix},
-    .pin-x#{$breakpoint-suffix} {
-        right: 0;
-    }
-
-    // Top
-    .pin-auto#{$breakpoint-suffix},
-    .pin-t-auto#{$breakpoint-suffix},
-    .pin-y-auto#{$breakpoint-suffix} {
-        top: auto;
-    }
-
-    // Bottom
-    .pin-auto#{$breakpoint-suffix},
-    .pin-b-auto#{$breakpoint-suffix},
-    .pin-y-auto#{$breakpoint-suffix} {
-        bottom: auto;
-    }
-
-    // Left
-    .pin-auto#{$breakpoint-suffix},
-    .pin-l-auto#{$breakpoint-suffix},
-    .pin-x-auto#{$breakpoint-suffix} {
-        left: auto;
-    }
-    
-    // Left
-    .pin-auto#{$breakpoint-suffix},
-    .pin-r-auto#{$breakpoint-suffix},
-    .pin-x-auto#{$breakpoint-suffix} {
-        right: auto;
-    }
+    @include create-classes(('.pin-auto','.pin-t-auto','.pin-y-auto'), top, auto, $position-variants);
+    @include create-classes(('.pin-auto','.pin-b-auto','.pin-y-auto'), bottom, auto, $position-variants);
+    @include create-classes(('.pin-auto','.pin-l-auto','.pin-x-auto'), left, auto, $position-variants);
+    @include create-classes(('.pin-auto','.pin-r-auto','.pin-x-auto'), right, auto, $position-variants);
 }

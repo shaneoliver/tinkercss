@@ -1,19 +1,10 @@
-@include breakpoint-loop() {
-    @each $overflow in $overflows {
-        .overflow-#{$overflow}#{$breakpoint-suffix} {
-            overflow: #{$overflow};
-        }
-        .overflow-#{$overflow}-x#{$breakpoint-suffix} {
-            overflow-x: #{$overflow};
-        }
-        .overflow-#{$overflow}-y#{$breakpoint-suffix} {
-            overflow-y: #{$overflow};
-        }
+@include breakpoint-loop($overflow-variants) {
+    @each $value in $overflows {
+        @include create-classes('.overflow-#{$value}', overflow, $value, $overflow-variants);
+        @include create-classes('.overflow-#{$value}-x', overflow-x, $value, $overflow-variants);
+        @include create-classes('.overflow-#{$value}-y', overflow-y, $value, $overflow-variants);
     }
-    .scrolling-touch#{$breakpoint-suffix} {
-        -webkit-overflow-scrolling: touch;
-    }
-    .scrolling-auto#{$breakpoint-suffix} {
-        -webkit-overflow-scrolling: auto;
-    }
+
+    @include create-classes('.scrolling-touch', -webkit-overflow-scrolling, touch, $overflow-variants);
+    @include create-classes('.scrolling-auto', -webkit-overflow-scrolling, auto, $overflow-variants);
 }

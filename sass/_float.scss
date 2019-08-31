@@ -1,14 +1,9 @@
-@include breakpoint-loop() {
-    @each $float in $floats {
-        .float-#{$float}#{$breakpoint-suffix} {
-            float: #{$float};
-        }
+@include breakpoint-loop($float-variants) {
+    @each $value in $floats {
+        @include create-classes('.float-#{$value}', float, $value, $float-variants);
     }
-    .clearfix#{$breakpoint-suffix} {
-        &::after {
-            content: '';
-            display: table;
-            clear: both;
-        }
-    }
+
+    @include create-classes('.clearfix', content, '', $float-variants, '::after');
+    @include create-classes('.clearfix', display, table, $float-variants, '::after');
+    @include create-classes('.clearfix', clear, both, $float-variants, '::after');
 }

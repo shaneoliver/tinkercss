@@ -1,82 +1,23 @@
-@include breakpoint-loop() {
-    @each $color, $value in $colors {
-        .border-#{$color}#{$breakpoint-suffix} {
-            border-color: $value;
-        }
+@include breakpoint-loop($border-variants) {
+
+    @each $key, $value in $colors {
+        @include create-classes('.border-#{$key}', border-color, $value, $border-variants);
     }
 
-    .border#{$breakpoint-suffix} {
-        border-width: 1px;
-    }
+    @include create-classes('.border', border-width, 1px, $border-variants);
 
     @each $key, $value in $borders {
-        // Top
-        .border-#{$key}#{$breakpoint-suffix},
-        .border-t-#{$key}#{$breakpoint-suffix},
-        .border-y-#{$key}#{$breakpoint-suffix} {
-            border-top-width: #{$value};
-        }
-
-        // Bottom
-        .border-#{$key}#{$breakpoint-suffix},
-        .border-b-#{$key}#{$breakpoint-suffix},
-        .border-y-#{$key}#{$breakpoint-suffix} {
-            border-bottom-width: #{$value};
-        }
-
-        // Left
-        .border-#{$key}#{$breakpoint-suffix},
-        .border-l-#{$key}#{$breakpoint-suffix},
-        .border-x-#{$key}#{$breakpoint-suffix} {
-            border-left-width: #{$value};
-        }
-
-        // Right
-        .border-#{$key}#{$breakpoint-suffix},
-        .border-r-#{$key}#{$breakpoint-suffix},
-        .border-x-#{$key}#{$breakpoint-suffix} {
-            border-right-width: #{$value};
-        }
+        @include create-classes(('.border-#{$key}', '.border-t-#{$key}', '.border-y-#{$key}'), border-top-width, $value, $border-variants);
+        @include create-classes(('.border-#{$key}', '.border-b-#{$key}', '.border-y-#{$key}'), border-bottom-width, $value, $border-variants);
+        @include create-classes(('.border-#{$key}', '.border-l-#{$key}', '.border-x-#{$key}'), border-left-width, $value, $border-variants);
+        @include create-classes(('.border-#{$key}', '.border-r-#{$key}', '.border-x-#{$key}'), border-right-width, $value, $border-variants);
     }
 
     @each $key, $value in $border-radius {
-        .rounded-#{$key}#{$breakpoint-suffix} {
-            border-radius: #{$value};
-        }
-        // Top
-        .rounded-t-#{$key}#{$breakpoint-suffix} {
-            border-top-left-radius: #{$value};
-            border-top-right-radius: #{$value};
-        }
-        .rounded-tl-#{$key}#{$breakpoint-suffix} {
-            border-top-left-radius: #{$value};
-        }
-        .rounded-tr-#{$key}#{$breakpoint-suffix} {
-            border-top-right-radius: #{$value};
-        }
+        @include create-classes(('.rounded-#{$key}', '.rounded-t-#{$key}', '.rounded-tl-#{$key}'), border-top-left-radius, $value, $border-variants);
+        @include create-classes(('.rounded-#{$key}', '.rounded-t-#{$key}', '.rounded-tr-#{$key}'), border-top-right-radius, $value, $border-variants);
+        @include create-classes(('.rounded-#{$key}', '.rounded-b-#{$key}', '.rounded-bl-#{$key}'), border-bottom-left-radius, $value, $border-variants);
+        @include create-classes(('.rounded-#{$key}', '.rounded-b-#{$key}', '.rounded-br-#{$key}'), border-bottom-right-radius, $value, $border-variants);
 
-        // Bottom
-        .rounded-b-#{$key}#{$breakpoint-suffix} {
-            border-bottom-left-radius: #{$value};
-            border-bottom-right-radius: #{$value};
-        }
-        .rounded-bl-#{$key}#{$breakpoint-suffix} {
-            border-bottom-left-radius: #{$value};
-        }
-        .rounded-br-#{$key}#{$breakpoint-suffix} {
-            border-bottom-right-radius: #{$value};
-        }
-
-        // Left
-        .rounded-l-#{$key}#{$breakpoint-suffix} {
-            border-top-left-radius: #{$value};
-            border-bottom-left-radius: #{$value};
-        }
-
-        // Right
-        .rounded-r-#{$key}#{$breakpoint-suffix} {
-            border-top-right-radius: #{$value};
-            border-bottom-right-radius: #{$value};
-        }
     }
 }

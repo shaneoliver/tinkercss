@@ -1,14 +1,8 @@
-@include breakpoint-loop() {
-    @each $display, $value in $displays {
-        .#{$display}#{$breakpoint-suffix} {
-            display: #{$value};
-        }
+@include breakpoint-loop($display-variants) {
+    @each $key, $value in $displays {
+        @include create-classes('.#{$key}', display, $value, $display-variants);
     }
 
-    .visible#{$breakpoint-suffix} {
-        visibility: visible;
-    }
-    .invisible#{$breakpoint-suffix} {
-        visibility: hidden;
-    }
+    @include create-classes('.visible', visibility, visible, $display-variants);
+    @include create-classes('.invisible', visibility, hidden, $display-variants);
 }

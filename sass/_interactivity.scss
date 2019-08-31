@@ -1,49 +1,21 @@
-@include breakpoint-loop() {
+@include breakpoint-loop($interactivity-variants) {
 
-    .appearance-none#{$breakpoint-suffix} {
-        appearance: none;
-    }
+    @include create-classes('.appearance-none', appearance, none, $interactivity-variants);
 
-    @each $cursor in $cursors {
-        .cursor-#{$cursor}#{$breakpoint-suffix} {
-            cursor: #{$cursor};
-        }
+    @each $key in $cursors {
+        @include create-classes('.cursor-.#{$key}', cursor, $key, $interactivity-variants);
     }
 
-    .outline-none#{$breakpoint-suffix} {
-        outline: 0;
-    }
+    @include create-classes('.outline-none', outline, 0, $interactivity-variants);
+    @include create-classes('.pointer-events-none', pointer-events, none, $interactivity-variants);
+    @include create-classes('.pointer-events-auto', pointer-events, auto, $interactivity-variants);
+    
+    @include create-classes('.resize', resize, both, $interactivity-variants);
+    @include create-classes('.resize-none', resize, none, $interactivity-variants);
+    @include create-classes('.resize-y', resize, vertical, $interactivity-variants);
+    @include create-classes('.resize-x', resize, horizontal, $interactivity-variants);
 
-    .pointer-events-none#{$breakpoint-suffix} {
-        pointer-events: none;
-    }
-    .pointer-events-auto#{$breakpoint-suffix} {
-        pointer-events: auto;
-    }
-
-    .resize-none#{$breakpoint-suffix} {
-        resize: none;
-    }
-    .resize#{$breakpoint-suffix} {
-        resize: both;
-    }
-    .resize-y#{$breakpoint-suffix} {
-        resize: vertical;
-    }
-    .resize-x#{$breakpoint-suffix} {
-        resize: horizontal;
-    }
-
-    .select-none#{$breakpoint-suffix} {
-        user-select: none;
-    }
-    .select-text#{$breakpoint-suffix} {
-        user-select: text;
-    }
-    .select-all#{$breakpoint-suffix} {
-        user-select: all;
-    }
-    .select-auto#{$breakpoint-suffix} {
-        user-select: auto;
+    @each $value in (none, text, all, auto) {
+        @include create-classes('.select-#{$value}', user-select, $value, $interactivity-variants);
     }
 }

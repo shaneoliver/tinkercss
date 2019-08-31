@@ -1,13 +1,11 @@
-@include breakpoint-loop() {
-    @each $fit in $object-fits {
-        .object-#{$fit}#{$breakpoint-suffix} {
-            object-fit: #{$fit};
-        }
+@include breakpoint-loop($object-fit-variants) {
+    @each $value in $object-fits {
+        @include create-classes('.object-#{$value}', object-fit, $value, $object-fit-variants);
     }
+}
 
-    @each $position, $value in $object-positions {
-        .object-#{$position}#{$breakpoint-suffix} {
-            object-position: #{$value};
-        }
+@include breakpoint-loop($object-position-variants) {
+    @each $key, $value in $object-positions {
+        @include create-classes('.object-#{$key}', object-position, $value, $object-position-variants);
     }
 }

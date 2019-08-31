@@ -1,26 +1,14 @@
-@include breakpoint-loop() {
-
+@include breakpoint-loop($background-variants) {
     @each $value in $background-attachments {
-        .bg-#{$value}#{$breakpoint-suffix} {
-            background-attachment: #{$value};
-        }
+        @include create-classes('.bg-#{$value}', background-attachment, $value, $background-variants);
     }
-
     @each $value in $background-sizes {
-        .bg-#{$value}#{$breakpoint-suffix} {
-            background-size: #{$value};
-        }
+        @include create-classes('.bg-#{$value}', background-size, $value, $background-variants);
     }
-
     @each $key, $value in $background-positions {
-        .bg-#{$key}#{$breakpoint-suffix} {
-            background-position: #{$value};
-        }
+        @include create-classes('.bg-#{$key}', background-position, $value, $background-variants);
     }
-
     @each $key, $value in $background-repeats {
-        .bg-#{$key}#{$breakpoint-suffix} {
-            background-repeat: #{$value};
-        }
+        @include create-classes('.bg-#{$key}', background-repeat, $value, $background-variants);
     }
 }

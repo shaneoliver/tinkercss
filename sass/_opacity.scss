@@ -1,0 +1,5 @@
+@include breakpoint-loop($opacity-variants) {
+    @each $key, $value in $opacities {
+        @include create-classes('.opacity-#{$key}', opacity, $value, $opacity-variants);
+    }
+}

@@ -1,52 +1,32 @@
-@include breakpoint-loop() {
+@include breakpoint-loop($flex-variants) {
     @each $key, $value in $flex-direction {
-        .#{$key}#{$breakpoint-suffix} {
-            flex-direction: #{$value};
-        }
+        @include create-classes('.#{$key}', flex-direction, $value, $flex-variants);
     }
     @each $key, $value in $flex-wrap {
-        .#{$key}#{$breakpoint-suffix} {
-            flex-wrap: #{$value};
-        }
+        @include create-classes('.#{$key}', flex-wrap, $value, $flex-variants);
     }
     @each $key, $value in $align-items {
-        .#{$key}#{$breakpoint-suffix} {
-            align-items: #{$value};
-        }
+        @include create-classes('.#{$key}', align-items, $value, $flex-variants);
     }
     @each $key, $value in $align-content {
-        .#{$key}#{$breakpoint-suffix} {
-            align-content: #{$value};
-        }
+        @include create-classes('.#{$key}', align-content, $value, $flex-variants);
     }
     @each $key, $value in $align-self {
-        .#{$key}#{$breakpoint-suffix} {
-            align-self: #{$value};
-        }
+        @include create-classes('.#{$key}', align-self, $value, $flex-variants);
     }
     @each $key, $value in $justify-content {
-        .#{$key}#{$breakpoint-suffix} {
-            justify-content: #{$value};
-        }
+        @include create-classes('.#{$key}', justify-content, $value, $flex-variants);
     }
     @each $key, $value in $flex {
-        .#{$key}#{$breakpoint-suffix} {
-            flex: #{$value};
-        }
+        @include create-classes('.#{$key}', flex, $value, $flex-variants);
     }
     @each $key, $value in $flex-grow {
-        .#{$key}#{$breakpoint-suffix} {
-            flex-grow: #{$value};
-        }
+        @include create-classes('.#{$key}', flex-grow, $value, $flex-variants);
     }
     @each $key, $value in $flex-shrink {
-        .#{$key}#{$breakpoint-suffix} {
-            flex-shrink: #{$value};
-        }
+        @include create-classes('.#{$key}', flex-shrink, $value, $flex-variants);
     }
     @each $key, $value in $order {
-        .order-#{$key}#{$breakpoint-suffix} {
-            order: #{$value};
-        }
+        @include create-classes('.order-#{$key}', order, $value, $flex-variants);
     }
 }

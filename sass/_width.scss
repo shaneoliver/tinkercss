@@ -1,42 +1,16 @@
-@include breakpoint-loop() {
+@include breakpoint-loop($width-variants) {
     @each $key, $value in $widths {
-        .#{$key}#{$breakpoint-suffix} {
-            width: #{$value};
-        }
+        @include create-classes('.#{$key}', width, $value, $width-variants);
     }
+
+    @each $key, $value in $blocks {
+        @include create-classes('.#{$key}', width, $value, $width-variants);
+    }
+
     @each $key, $value in $max-widths {
-        .#{$key}#{$breakpoint-suffix} {
-            max-width: #{$value};
-        }
+        @include create-classes('.#{$key}', max-width, $value, $width-variants);
     }
 
-    .min-w-0#{$breakpoint-suffix} {
-        min-width: 0;
-    }
-    .min-w-full#{$breakpoint-suffix} {
-        min-width: 100%;
-    }
-
-    @each $key, $value in $heights {
-        .#{$key}#{$breakpoint-suffix} {
-            height: #{$value};
-        }
-    }
-
-    .min-h-0#{$breakpoint-suffix} {
-        min-height: 0;
-    }
-    .min-h-full#{$breakpoint-suffix} {
-        min-height: 100%;
-    }
-    .min-h-screen#{$breakpoint-suffix} {
-        min-height: 100vh;
-    }
-
-    .max-h-full#{$breakpoint-suffix} {
-        max-height: 100%;
-    }
-    .max-h-screen#{$breakpoint-suffix} {
-        max-height: 100vh;
-    }
+    @include create-classes('.min-w-0', min-width, 0, $width-variants);
+    @include create-classes('.min-w-full', min-width, 100%, $width-variants);
 }
