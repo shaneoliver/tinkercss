@@ -11,3 +11,66 @@
 
     @return $string;
 }
+
+@mixin create-classes($class, $attr, $value, $variants, $pseudo: '') {
+    .#{$class} {
+        &#{$breakpoint-suffix}#{$pseudo} {
+            #{$attr}: $value;
+        }
+        @if index($variants, active) {
+            &\:active#{$breakpoint-suffix}:active#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, disabled) {
+            &\:disabled#{$breakpoint-suffix}:disabled#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, focus) {
+            &\:focus#{$breakpoint-suffix}:focus#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, focus-within) {
+            &\:focus-within#{$breakpoint-suffix}:focus-within#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, hover) {
+            &\:hover#{$breakpoint-suffix}:hover#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, group-hover) {
+            .group:hover &\:group-hover#{$breakpoint-suffix}#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, visited) {
+            &\:visited#{$breakpoint-suffix}:visited#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, first) {
+            &\:first#{$breakpoint-suffix}:first-child#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, last) {
+            &\:last#{$breakpoint-suffix}:last-child#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, odd) {
+            &\:odd#{$breakpoint-suffix}:nth-child(odd)#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+        @if index($variants, even) {
+            &\:even#{$breakpoint-suffix}:nth-child(even)#{$pseudo} {
+                #{$attr}: $value;
+            }
+        }
+    }
+}

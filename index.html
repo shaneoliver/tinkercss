@@ -7,20 +7,26 @@
         <title>Atomic CSS with Sass</title>
         <link href="css/app.css" rel="stylesheet">
     </head>
-    <body class="font-sans line-normal">
+    <body class="font-sans line-normal mt-12">
         <div class="container">
-            <div class="flex flex-wrap flex-no-wrap@md -mx-4 items-center">
-                <div class="block-100 block-25@md px-4 mb-8 mb-0@md">
-                    <div class="p-4 rounded-lg bg-blue-200 shadow-xl-blue text-blue-500">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti perferendis pariatur labore nemo eveniet natus, quibusdam iure neque perspiciatis maiores consequuntur et ullam vel quaerat rerum commodi aliquam! Voluptatum?</p>
+            <div style="flex-wrap:wrap;" class="flex flex-wrap flex-no-wrap@md -mx-4 items-center">
+                <div class="block-100 block-75@md px-4 ml-auto">
+                    <div disabled class="bg-gray-100:disabled p-8 bg-green-200 bg-blue-500:hover text-green-500 text-blue-200:hover bg-pink-200@md bg-pink-400:hover@md text-pink-500@md text-yellow-500:hover@md text-yellow-500:active">
+                        <p>🤪Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti perferendis pariatur labore nemo eveniet natus, quibusdam iure neque perspiciatis maiores consequuntur et ullam vel quaerat rerum commodi aliquam! Voluptatum?</p>
                     </div>
                 </div>
-                <div class="block-100 block-75@md px-4 ml-auto">
-                    <div class="p-8 rounded-lg bg-green-200 bg-blue-500:hover text-pink-200:hover@md text-blue-200:hover text-green-500 shadow-xl-green">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti perferendis pariatur labore nemo eveniet natus, quibusdam iure neque perspiciatis maiores consequuntur et ullam vel quaerat rerum commodi aliquam! Voluptatum?</p>
-                    </div>
+
+                <div class="group block-100 mt-10 bg-yellow-500 bg-pink-500:focus-within  p-4 ">
+                    <p class="bg-pink-500:group-hover text-gray-300:group-hover">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate eaque cum hic eum deserunt eligendi necessitatibus, quos nam non reiciendis a error, magnam qui! Facilis minima numquam exercitationem officia.</p>
+                    <p class="bg-green-500:group-hover text-gray-500:group-hover">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, voluptate eaque cum hic eum deserunt eligendi necessitatibus, quos nam non reiciendis a error, magnam qui! Facilis minima numquam exercitationem officia.</p>
                 </div>
             </div>
+        </div>
+
+        <div>
+            <form action="">
+                <input class="p-4 bg-gray-100 text-gray-500 placeholder-gray-200 placeholder-pink-500:focus" type="text" placeholder="Shane is cool">
+            </form>
         </div>
     </body>
 </html>

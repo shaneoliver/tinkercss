@@ -1,74 +1,24 @@
 @include breakpoint-loop($text-color-variants) {
     @each $color, $value in $colors {
-        
-        .text-#{$color} {
-            @if index($text-color-variants, responsive) {
-                &#{$breakpoint-suffix} {
-                    color: $value;
-                }
-            }
-
-            @if index($text-color-variants, hover) {
-                &\:hover#{$breakpoint-suffix}:hover {
-                    color: $value;
-                }
-            }
-        }
+        @include create-classes(text-#{$color}, color, $value, $text-color-variants);
     }
 }
 
 @include breakpoint-loop($bg-color-variants) {
     @each $color, $value in $colors {
-
-        .bg-#{$color} {
-            &#{$breakpoint-suffix} {
-                background-color: $value;
-            }
-
-            @if index($bg-color-variants, hover) {
-                &\:hover#{$breakpoint-suffix}:hover {
-                    background-color: $value;
-                }
-            }
-        }
-
-        .placeholder-#{$color}#{$breakpoint-suffix}::placeholder {
-            color: $value;
-        }
-    }
-
-    .fill-current#{$breakpoint-suffix} {
-        fill: currentColor;
-    }
-
-    .stroke-current#{$breakpoint-suffix} {
-        stroke: currentColor;
+        @include create-classes(bg-#{$color}, background-color, $value, $bg-color-variants);
     }
 }
 
-
-@include breakpoint-loop() {
+@include breakpoint-loop($placeholder-variants) {
     @each $color, $value in $colors {
-        .placeholder-#{$color}#{$breakpoint-suffix}::placeholder {
-            color: $value;
-        }
-    }
-
-    .fill-current#{$breakpoint-suffix} {
-        fill: currentColor;
-    }
-
-    .stroke-current#{$breakpoint-suffix} {
-        stroke: currentColor;
+        @include create-classes(placeholder-#{$color}, color, $value, $placeholder-variants, '::placeholder');
     }
 }
 
-@include breakpoint-loop() {
-    .fill-current#{$breakpoint-suffix} {
-        fill: currentColor;
-    }
+$svg-variants: responsive !default;
 
-    .stroke-current#{$breakpoint-suffix} {
-        stroke: currentColor;
-    }
+@include breakpoint-loop($svg-variants) {
+    @include create-classes(fill-current, fill, currentColor, $svg-variants);
+    @include create-classes(stroke-current, stroke, currentColor, $svg-variants);
 }

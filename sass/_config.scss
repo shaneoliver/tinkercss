@@ -602,18 +602,9 @@ $background-repeats: (
 
 // Variants
 /*
-responsive
-group-hover
-focus-within
-first
-last
-odd
-even
-hover
-focus
-active
-visited
-disabled
+ responsive, group-hover, focus-within, first, last, odd, even, hover, focus, active, visited, disabled
 */
-$bg-color-variants: responsive, hover, focus, active, visited !default;
-$text-color-variants: responsive, hover !default;
+$bg-color-variants: responsive, group-hover, focus-within, first, last, odd, even, hover, focus, active, visited, disabled !default;
+$text-color-variants: responsive, group-hover, focus-within, first, last, odd, even, hover, focus, active, visited, disabled !default;
+$placeholder-variants: responsive, focus !default;
+$svg-variants: responsive !default;
