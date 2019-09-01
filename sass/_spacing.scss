@@ -16,6 +16,12 @@
     }
 }
 
+@include breakpoint-loop($offset-variants) {
+    @each $key, $value in $offsets {
+        @include create-classes('.#{$key}', margin-left, $value, $offset-variants);
+    }
+}
+
 @include breakpoint-loop($negative-margin-variants) {
     @each $key, $value in $margins {
         @include create-classes(('.-m-#{$key}', '.-mt-#{$key}', '.-my-#{$key}'), margin-top, -$value, $negative-margin-variants);
