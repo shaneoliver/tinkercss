@@ -1,3 +1,4 @@
+$black: #000000 !default;
 $blue-100: #E6F2FF !default;
 $blue-200: #BFDEFF !default;
 $blue-300: #99CAFF !default;
@@ -7,78 +8,6 @@ $blue-600: #006FE6 !default;
 $blue-700: #004A99 !default;
 $blue-800: #003773 !default;
 $blue-900: #00254D !default;
-$indigo-100: #F0E7FE !default;
-$indigo-200: #D9C3FC !default;
-$indigo-300: #C29FFA !default;
-$indigo-400: #9458F6 !default;
-$indigo-500: #6610F2 !default;
-$indigo-600: #5C0EDA !default;
-$indigo-700: #3D0A91 !default;
-$indigo-800: #2E076D !default;
-$indigo-900: #1F0549 !default;
-$purple-100: #F1ECF9 !default;
-$purple-200: #DBD0F0 !default;
-$purple-300: #C5B3E6 !default;
-$purple-400: #9A7BD4 !default;
-$purple-500: #6F42C1 !default;
-$purple-600: #643BAE !default;
-$purple-700: #432874 !default;
-$purple-800: #321E57 !default;
-$purple-900: #21143A !default;
-$pink-100: #FDECF4 !default;
-$pink-200: #F9CFE2 !default;
-$pink-300: #F6B2D1 !default;
-$pink-400: #EF78AF !default;
-$pink-500: #E83E8C !default;
-$pink-600: #D1387E !default;
-$pink-700: #8B2554 !default;
-$pink-800: #681C3F !default;
-$pink-900: #46132A !default;
-$red-100: #FCEBEC !default;
-$red-200: #F6CDD1 !default;
-$red-300: #F1AEB5 !default;
-$red-400: #E7727D !default;
-$red-500: #DC3545 !default;
-$red-600: #C6303E !default;
-$red-700: #842029 !default;
-$red-800: #63181F !default;
-$red-900: #421015 !default;
-$orange-100: #FFF2E8 !default;
-$orange-200: #FFDFC4 !default;
-$orange-300: #FECBA1 !default;
-$orange-400: #FEA55B !default;
-$orange-500: #FD7E14 !default;
-$orange-600: #E47112 !default;
-$orange-700: #984C0C !default;
-$orange-800: #723909 !default;
-$orange-900: #4C2606 !default;
-$yellow-100: #FFF9E6 !default;
-$yellow-200: #FFF0C1 !default;
-$yellow-300: #FFE69C !default;
-$yellow-400: #FFD451 !default;
-$yellow-500: #FFC107 !default;
-$yellow-600: #E6AE06 !default;
-$yellow-700: #997404 !default;
-$yellow-800: #735703 !default;
-$yellow-900: #4D3A02 !default;
-$green-100: #EAF6EC !default;
-$green-200: #C9E9D1 !default;
-$green-300: #A9DCB5 !default;
-$green-400: #69C17D !default;
-$green-500: #28A745 !default;
-$green-600: #24963E !default;
-$green-700: #186429 !default;
-$green-800: #124B1F !default;
-$green-900: #0C3215 !default;
-$teal-100: #E9FAF5 !default;
-$teal-200: #C7F2E5 !default;
-$teal-300: #A6E9D5 !default;
-$teal-400: #63D9B6 !default;
-$teal-500: #20C997 !default;
-$teal-600: #1DB588 !default;
-$teal-700: #13795B !default;
-$teal-800: #0E5A44 !default;
-$teal-900: #0A3C2D !default;
 $cyan-100: #E8F6F8 !default;
 $cyan-200: #C5E8ED !default;
 $cyan-300: #A2DAE3 !default;
@@ -88,20 +17,92 @@ $cyan-600: #1592A6 !default;
 $cyan-700: #0E616E !default;
 $cyan-800: #0A4953 !default;
 $cyan-900: #073137 !default;
-$white: #FFFFFF !default;
-$gray-50: hsl(210, 7%, 99%) !default;
 $gray-100: #F0F1F2 !default;
 $gray-200: #DADDE0 !default;
 $gray-300: #C3C8CD !default;
 $gray-400: #979EA7 !default;
+$gray-50: hsl(210, 7%, 99%) !default;
 $gray-500: #6A7581 !default;
 $gray-600: #5F6974 !default;
 $gray-700: #40464D !default;
 $gray-800: #30353A !default;
 $gray-900: #202327 !default;
-$black: #000000 !default;
+$green-100: #EAF6EC !default;
+$green-200: #C9E9D1 !default;
+$green-300: #A9DCB5 !default;
+$green-400: #69C17D !default;
+$green-500: #28A745 !default;
+$green-600: #24963E !default;
+$green-700: #186429 !default;
+$green-800: #124B1F !default;
+$green-900: #0C3215 !default;
+$indigo-100: #F0E7FE !default;
+$indigo-200: #D9C3FC !default;
+$indigo-300: #C29FFA !default;
+$indigo-400: #9458F6 !default;
+$indigo-500: #6610F2 !default;
+$indigo-600: #5C0EDA !default;
+$indigo-700: #3D0A91 !default;
+$indigo-800: #2E076D !default;
+$indigo-900: #1F0549 !default;
+$orange-100: #FFF2E8 !default;
+$orange-200: #FFDFC4 !default;
+$orange-300: #FECBA1 !default;
+$orange-400: #FEA55B !default;
+$orange-500: #FD7E14 !default;
+$orange-600: #E47112 !default;
+$orange-700: #984C0C !default;
+$orange-800: #723909 !default;
+$orange-900: #4C2606 !default;
+$pink-100: #FDECF4 !default;
+$pink-200: #F9CFE2 !default;
+$pink-300: #F6B2D1 !default;
+$pink-400: #EF78AF !default;
+$pink-500: #E83E8C !default;
+$pink-600: #D1387E !default;
+$pink-700: #8B2554 !default;
+$pink-800: #681C3F !default;
+$pink-900: #46132A !default;
+$purple-100: #F1ECF9 !default;
+$purple-200: #DBD0F0 !default;
+$purple-300: #C5B3E6 !default;
+$purple-400: #9A7BD4 !default;
+$purple-500: #6F42C1 !default;
+$purple-600: #643BAE !default;
+$purple-700: #432874 !default;
+$purple-800: #321E57 !default;
+$purple-900: #21143A !default;
+$red-100: #FCEBEC !default;
+$red-200: #F6CDD1 !default;
+$red-300: #F1AEB5 !default;
+$red-400: #E7727D !default;
+$red-500: #DC3545 !default;
+$red-600: #C6303E !default;
+$red-700: #842029 !default;
+$red-800: #63181F !default;
+$red-900: #421015 !default;
+$teal-100: #E9FAF5 !default;
+$teal-200: #C7F2E5 !default;
+$teal-300: #A6E9D5 !default;
+$teal-400: #63D9B6 !default;
+$teal-500: #20C997 !default;
+$teal-600: #1DB588 !default;
+$teal-700: #13795B !default;
+$teal-800: #0E5A44 !default;
+$teal-900: #0A3C2D !default;
+$white: #FFFFFF !default;
+$yellow-100: #FFF9E6 !default;
+$yellow-200: #FFF0C1 !default;
+$yellow-300: #FFE69C !default;
+$yellow-400: #FFD451 !default;
+$yellow-500: #FFC107 !default;
+$yellow-600: #E6AE06 !default;
+$yellow-700: #997404 !default;
+$yellow-800: #735703 !default;
+$yellow-900: #4D3A02 !default;
 
 $colors: (
+    'black'   : $black,
     'blue-100': $blue-100,
     'blue-200': $blue-200,
     'blue-300': $blue-300,
@@ -111,78 +112,6 @@ $colors: (
     'blue-700': $blue-700,
     'blue-800': $blue-800,
     'blue-900': $blue-900,
-    'indigo-100': $indigo-100,
-    'indigo-200': $indigo-200,
-    'indigo-300': $indigo-300,
-    'indigo-400': $indigo-400,
-    'indigo-500': $indigo-500,
-    'indigo-600': $indigo-600,
-    'indigo-700': $indigo-700,
-    'indigo-800': $indigo-800,
-    'indigo-900': $indigo-900,
-    'purple-100': $purple-100,
-    'purple-200': $purple-200,
-    'purple-300': $purple-300,
-    'purple-400': $purple-400,
-    'purple-500': $purple-500,
-    'purple-600': $purple-600,
-    'purple-700': $purple-700,
-    'purple-800': $purple-800,
-    'purple-900': $purple-900,
-    'pink-100': $pink-100,
-    'pink-200': $pink-200,
-    'pink-300': $pink-300,
-    'pink-400': $pink-400,
-    'pink-500': $pink-500,
-    'pink-600': $pink-600,
-    'pink-700': $pink-700,
-    'pink-800': $pink-800,
-    'pink-900': $pink-900,
-    'red-100': $red-100,
-    'red-200': $red-200,
-    'red-300': $red-300,
-    'red-400': $red-400,
-    'red-500': $red-500,
-    'red-600': $red-600,
-    'red-700': $red-700,
-    'red-800': $red-800,
-    'red-900': $red-900,
-    'orange-100': $orange-100,
-    'orange-200': $orange-200,
-    'orange-300': $orange-300,
-    'orange-400': $orange-400,
-    'orange-500': $orange-500,
-    'orange-600': $orange-600,
-    'orange-700': $orange-700,
-    'orange-800': $orange-800,
-    'orange-900': $orange-900,
-    'yellow-100': $yellow-100,
-    'yellow-200': $yellow-200,
-    'yellow-300': $yellow-300,
-    'yellow-400': $yellow-400,
-    'yellow-500': $yellow-500,
-    'yellow-600': $yellow-600,
-    'yellow-700': $yellow-700,
-    'yellow-800': $yellow-800,
-    'yellow-900': $yellow-900,
-    'green-100': $green-100,
-    'green-200': $green-200,
-    'green-300': $green-300,
-    'green-400': $green-400,
-    'green-500': $green-500,
-    'green-600': $green-600,
-    'green-700': $green-700,
-    'green-800': $green-800,
-    'green-900': $green-900,
-    'teal-100': $teal-100,
-    'teal-200': $teal-200,
-    'teal-300': $teal-300,
-    'teal-400': $teal-400,
-    'teal-500': $teal-500,
-    'teal-600': $teal-600,
-    'teal-700': $teal-700,
-    'teal-800': $teal-800,
-    'teal-900': $teal-900,
     'cyan-100': $cyan-100,
     'cyan-200': $cyan-200,
     'cyan-300': $cyan-300,
@@ -192,31 +121,102 @@ $colors: (
     'cyan-700': $cyan-700,
     'cyan-800': $cyan-800,
     'cyan-900': $cyan-900,
-    'white'   : $white, 
-    'gray-50' : $gray-50,
     'gray-100': $gray-100,
     'gray-200': $gray-200,
     'gray-300': $gray-300,
     'gray-400': $gray-400,
+    'gray-50' : $gray-50,
     'gray-500': $gray-500,
     'gray-600': $gray-600,
     'gray-700': $gray-700,
     'gray-800': $gray-800,
-    'black'   : $black,
     'gray-900': $gray-900,
+    'green-100': $green-100,
+    'green-200': $green-200,
+    'green-300': $green-300,
+    'green-400': $green-400,
+    'green-500': $green-500,
+    'green-600': $green-600,
+    'green-700': $green-700,
+    'green-800': $green-800,
+    'green-900': $green-900,
+    'indigo-100': $indigo-100,
+    'indigo-200': $indigo-200,
+    'indigo-300': $indigo-300,
+    'indigo-400': $indigo-400,
+    'indigo-500': $indigo-500,
+    'indigo-600': $indigo-600,
+    'indigo-700': $indigo-700,
+    'indigo-800': $indigo-800,
+    'indigo-900': $indigo-900,
+    'orange-100': $orange-100,
+    'orange-200': $orange-200,
+    'orange-300': $orange-300,
+    'orange-400': $orange-400,
+    'orange-500': $orange-500,
+    'orange-600': $orange-600,
+    'orange-700': $orange-700,
+    'orange-800': $orange-800,
+    'orange-900': $orange-900,
+    'pink-100': $pink-100,
+    'pink-200': $pink-200,
+    'pink-300': $pink-300,
+    'pink-400': $pink-400,
+    'pink-500': $pink-500,
+    'pink-600': $pink-600,
+    'pink-700': $pink-700,
+    'pink-800': $pink-800,
+    'pink-900': $pink-900,
+    'purple-100': $purple-100,
+    'purple-200': $purple-200,
+    'purple-300': $purple-300,
+    'purple-400': $purple-400,
+    'purple-500': $purple-500,
+    'purple-600': $purple-600,
+    'purple-700': $purple-700,
+    'purple-800': $purple-800,
+    'purple-900': $purple-900,
+    'red-100': $red-100,
+    'red-200': $red-200,
+    'red-300': $red-300,
+    'red-400': $red-400,
+    'red-500': $red-500,
+    'red-600': $red-600,
+    'red-700': $red-700,
+    'red-800': $red-800,
+    'red-900': $red-900,
+    'teal-100': $teal-100,
+    'teal-200': $teal-200,
+    'teal-300': $teal-300,
+    'teal-400': $teal-400,
+    'teal-500': $teal-500,
+    'teal-600': $teal-600,
+    'teal-700': $teal-700,
+    'teal-800': $teal-800,
+    'teal-900': $teal-900,
+    'white'   : $white, 
+    'yellow-100': $yellow-100,
+    'yellow-200': $yellow-200,
+    'yellow-300': $yellow-300,
+    'yellow-400': $yellow-400,
+    'yellow-500': $yellow-500,
+    'yellow-600': $yellow-600,
+    'yellow-700': $yellow-700,
+    'yellow-800': $yellow-800,
+    'yellow-900': $yellow-900,
 ) !default;
 
 $shadow-colors: (
     'blue': $blue-500,
-    'indigo': $indigo-500,
-    'purple': $purple-500,
-    'pink': $pink-500,
-    'red': $red-500,
-    'orange': $orange-500,
-    'yellow': $yellow-500,
-    'green': $green-500,
-    'teal': $teal-500,
     'cyan': $cyan-500,
+    'green': $green-500,
+    'indigo': $indigo-500,
+    'orange': $orange-500,
+    'pink': $pink-500,
+    'purple': $purple-500,
+    'red': $red-500,
+    'teal': $teal-500,
+    'yellow': $yellow-500,
 ) !default;
 
 $breakpoints: (
@@ -238,20 +238,20 @@ $container-widths: (
 
 $displays: (
     block: block,
-    inline-block: inline-block,
-    inline: inline,
     flex: flex,
-    inline-flex: inline-flex,
-    table: table,
-    table-row: table-row,
-    table-cell: table-cell,
     hidden: none,
+    inline-block: inline-block,
+    inline-flex: inline-flex,
+    inline: inline,
+    table-cell: table-cell,
+    table-row: table-row,
+    table: table,
 ) !default;
 
 $floats: (
-    right,
     left,
     none,
+    right,
 ) !default;
 
 $object-fits: (
@@ -265,27 +265,27 @@ $object-fits: (
 $object-positions: (
     bottom: bottom,
     center: center,
-    left: left,
     left-bottom: left bottom,
     left-top: left top,
-    right: right,
+    left: left,
     right-bottom: right bottom,
     right-top: right top,
+    right: right,
     top: top,
 ) !default;
 
 $overflows: (
     auto,
     hidden,
-    visible,
     scroll,
+    visible,
 ) !default;
 
 $positions: (
-    static,
-    fixed,
     absolute,
+    fixed,
     relative,
+    static,
     sticky,
 ) !default;
 
@@ -361,46 +361,46 @@ $flex-direction: (
 
 $flex-wrap: (
     flex-no-wrap: nowrap,
-    flex-wrap: wrap,
     flex-wrap-reverse: wrap-reverse,
+    flex-wrap: wrap,
 ) !default;
 
 $align-items: (
-    items-stretch: stretch,
-    items-start: flex-start,
+    items-baseline: baseline,
     items-center: center,
     items-end: flex-end,
-    items-baseline: baseline,
+    items-start: flex-start,
+    items-stretch: stretch,
 ) !default;
 
 $align-content: (
-    content-start: flex-start,
+    content-around: space-around,
+    content-between: space-between,
     content-center: center,
     content-end: flex-end,
-    content-between: space-between,
-    content-around: space-around,
+    content-start: flex-start,
 ) !default;
 
 $align-self: (
     self-auto: auto,
-    self-start: flex-start,
     self-center: center,
     self-end: flex-end,
+    self-start: flex-start,
     self-stretch: stretch,
 ) !default;
 
 $justify-content: (
-    justify-start: flex-start,
+    justify-around: space-around,
+    justify-between: space-between,
     justify-center: center,
     justify-end: flex-end,
-    justify-between: space-between,
-    justify-around: space-around,
+    justify-start: flex-start,
 ) !default;
 
 $flex: (
-    flex-initial: 0 1 auto,
     flex-1: 1 1 0%,
     flex-auto: 1 1 auto,
+    flex-initial: 0 1 auto,
     flex-none: none,
 ) !default;
 
@@ -435,11 +435,11 @@ $order: (
 $cursors: (
     auto,
     default,
-    pointer,
-    wait,
-    text,
     move,
     not-allowed,
+    pointer,
+    text,
+    wait,
 ) !default;
 
 $fonts: (
@@ -627,12 +627,12 @@ $background-attachments: (
 $background-positions: (
     bottom: bottom,
     center: center,
-    left: left,
     left-bottom: left bottom,
     left-top: left top,
-    right: right,
+    left: left,
     right-bottom: right bottom,
     right-top: right top,
+    right: right,
     top: top,
 ) !default;
 
@@ -643,65 +643,65 @@ $background-sizes: (
 ) !default;
 
 $background-repeats: (
-    repeat: repeat, 
     no-repeat: no-repeat, 
-    repeat-x: repeat-x, 
-    repeat-y: repeat-y, 
     repeat-round: round, 
     repeat-space: space, 
+    repeat-x: repeat-x, 
+    repeat-y: repeat-y, 
+    repeat: repeat, 
 ) !default;
 
 $opacities: (
-    100: 1,
-    75: .75,
-    50: .5,
-    25: .25,
     0: 0,
+    25: .25,
+    50: .5,
+    75: .75,
+    100: 1,
 ) !default;
 
 $list-styles: (
-    none
-    disc
     decimal
+    disc
     inside
+    none
     outside
 ) !default;
 
 $text-alignments: (
-    left
     center
-    right
     justify
+    left
+    right
 ) !default;
 
 $decorations: (
-    underline: underline,
     line-through: line-through,
     no-underline: none,
+    underline: underline,
 ) !default;
 
 $text-transforms: (
-    uppercase: uppercase,
-    lowercase: lowercase,
     capitalize: capitalize,
+    lowercase: lowercase,
     normal-case: none,
+    uppercase: uppercase,
 ) !default;
 
 $vertical-alignments: (
     align-baseline: align-baseline,
-    align-top: align-top,
-    align-middle: align-middle,
     align-bottom: align-bottom,
-    align-text-top: align-text-top,
+    align-middle: align-middle,
     align-text-bottom: align-text-bottom,
+    align-text-top: align-text-top,
+    align-top: align-top,
 ) !default;
 
 $whitespaces: (
     normal: normal,
     nowrap: nowrap,
-    pre: pre,
     pre-line: pre-line,
     pre-wrap: pre-wrap,
+    pre: pre,
 ) !default;
 
 $transitions: (
@@ -714,43 +714,43 @@ $transitions: (
 /*
  responsive, group-hover, focus-within, first, last, odd, even, hover, focus, active, visited, disabled
  */
-$bg-color-variants: responsive, odd, even, hover !default;
-$text-color-variants: responsive, odd, even, hover !default;
-$placeholder-variants: responsive, focus !default;
-$svg-variants: responsive !default;
-$display-variants: responsive !default;
-$float-variants: responsive !default;
-$object-fit-variants: responsive !default;
-$object-position-variants: responsive !default;
-$overflow-variants: responsive !default;
-$position-variants: responsive !default;
-$z-index-variants: responsive !default;
+$alignment-variants: responsive !default;
+$antialiasing-variants: responsive !default;
 $background-variants: responsive !default;
+$bg-color-variants: responsive, odd, even, hover !default;
 $border-variants: responsive !default;
-$flex-variants: responsive !default;
-$width-variants: responsive !default;
-$height-variants: responsive !default;
-$table-variants: responsive !default;
 $box-shadow-variants: responsive hover !default;
-$opacity-variants: responsive !default;
-$interactivity-variants: responsive !default;
-$padding-variants: responsive !default;
-$margin-variants: responsive !default;
-$negative-margin-variants: responsive !default;
-$font-variants: responsive !default;
+$decoration-variants: responsive !default;
+$display-variants: responsive !default;
+$flex-variants: responsive !default;
+$float-variants: responsive !default;
 $font-size-variants: responsive !default;
+$font-style-variants: responsive !default;
+$font-variants: responsive !default;
 $font-weight-variants: responsive !default;
+$height-variants: responsive !default;
+$interactivity-variants: responsive !default;
 $letter-spacing-variants: responsive !default;
 $line-height-variants: responsive !default;
-$antialiasing-variants: responsive !default;
-$font-style-variants: responsive !default;
 $list-style-variants: responsive !default;
-$alignment-variants: responsive !default;
-$decoration-variants: responsive !default;
+$margin-variants: responsive !default;
+$negative-margin-variants: responsive !default;
+$object-fit-variants: responsive !default;
+$object-position-variants: responsive !default;
+$offset-variants: responsive !default;
+$opacity-variants: responsive !default;
+$overflow-variants: responsive !default;
+$padding-variants: responsive !default;
+$placeholder-variants: responsive, focus !default;
+$position-variants: responsive !default;
+$square-variants: responsive !default;
+$svg-variants: responsive !default;
+$table-variants: responsive !default;
+$text-color-variants: responsive, odd, even, hover !default;
 $text-transform-variants: responsive !default;
+$transition-variants: responsive !default;
 $vertical-alignment-variants: responsive !default;
 $whitespace-variants: responsive !default;
+$width-variants: responsive !default;
 $word-break-variants: responsive !default;
-$offset-variants: responsive !default;
-$square-variants: responsive !default;
-$transition-variants: responsive !default;
+$z-index-variants: responsive !default;

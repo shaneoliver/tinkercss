@@ -1,25 +1,28 @@
+// Required framework files
 @import 'config';
 @import 'normalize';
 @import 'helpers';
 @import 'breakpoints';
-@import 'container';
-@import 'display';
-@import 'float';
-@import 'object';
-@import 'overflow';
-@import 'position';
-@import 'z-index';
+
+// Utility class generator files
 @import 'background';
 @import 'border';
-@import 'flex';
-@import 'width';
-@import 'height';
-@import 'tables';
 @import 'box-shadow';
-@import 'opacity';
-@import 'interactivity';
 @import 'colors';
-@import 'typography';
+@import 'container';
+@import 'display';
+@import 'flex';
+@import 'float';
+@import 'height';
+@import 'interactivity';
+@import 'object';
+@import 'opacity';
+@import 'overflow';
+@import 'position';
 @import 'spacing';
 @import 'square';
+@import 'tables';
 @import 'transition';
+@import 'typography';
+@import 'width';
+@import 'z-index';
