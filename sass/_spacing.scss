@@ -1,91 +1,26 @@
-@include breakpoint-loop() {
-    @each $padding, $value in $paddings {
-        // Top
-        .p-#{$padding}#{$breakpoint-suffix},
-        .pt-#{$padding}#{$breakpoint-suffix},
-        .py-#{$padding}#{$breakpoint-suffix} {
-            padding-top: $value;
-        }
-
-        // Bottom
-        .p-#{$padding}#{$breakpoint-suffix},
-        .pb-#{$padding}#{$breakpoint-suffix},
-        .py-#{$padding}#{$breakpoint-suffix} {
-            padding-bottom: $value;
-        }
-
-        // Left
-        .p-#{$padding}#{$breakpoint-suffix},
-        .pl-#{$padding}#{$breakpoint-suffix},
-        .px-#{$padding}#{$breakpoint-suffix} {
-            padding-left: $value;
-        }
-
-        // Right
-        .p-#{$padding}#{$breakpoint-suffix},
-        .pr-#{$padding}#{$breakpoint-suffix},
-        .px-#{$padding}#{$breakpoint-suffix} {
-            padding-right: $value;
-        }
+@include breakpoint-loop($padding-variants) {
+    @each $key, $value in $paddings {
+        @include create-classes(('.p-#{$key}', '.pt-#{$key}', '.py-#{$key}'), padding-top, $value, $padding-variants);
+        @include create-classes(('.p-#{$key}', '.pb-#{$key}', '.py-#{$key}'), padding-bottom, $value, $padding-variants);
+        @include create-classes(('.p-#{$key}', '.pl-#{$key}', '.px-#{$key}'), padding-left, $value, $padding-variants);
+        @include create-classes(('.p-#{$key}', '.pr-#{$key}', '.px-#{$key}'), padding-right, $value, $padding-variants);
     }
+}
 
-    @each $margin, $value in $margins {
-        // Top
-        .m-#{$margin}#{$breakpoint-suffix},
-        .mt-#{$margin}#{$breakpoint-suffix},
-        .my-#{$margin}#{$breakpoint-suffix} {
-            margin-top: $value;
-        }
-
-        // Bottom
-        .m-#{$margin}#{$breakpoint-suffix},
-        .mb-#{$margin}#{$breakpoint-suffix},
-        .my-#{$margin}#{$breakpoint-suffix} {
-            margin-bottom: $value;
-        }
-
-        // Left
-        .m-#{$margin}#{$breakpoint-suffix},
-        .ml-#{$margin}#{$breakpoint-suffix},
-        .mx-#{$margin}#{$breakpoint-suffix} {
-            margin-left: $value;
-        }
-
-        // Right
-        .m-#{$margin}#{$breakpoint-suffix},
-        .mr-#{$margin}#{$breakpoint-suffix},
-        .mx-#{$margin}#{$breakpoint-suffix} {
-            margin-right: $value;
-        }
+@include breakpoint-loop($margin-variants) {
+    @each $key, $value in $margins {
+        @include create-classes(('.m-#{$key}', '.mt-#{$key}', '.my-#{$key}'), margin-top, $value, $margin-variants);
+        @include create-classes(('.m-#{$key}', '.mb-#{$key}', '.my-#{$key}'), margin-bottom, $value, $margin-variants);
+        @include create-classes(('.m-#{$key}', '.ml-#{$key}', '.mx-#{$key}'), margin-left, $value, $margin-variants);
+        @include create-classes(('.m-#{$key}', '.mr-#{$key}', '.mx-#{$key}'), margin-right, $value, $margin-variants);
     }
+}
 
-    @each $margin, $value in $paddings {
-        // Top
-        .-m-#{$margin}#{$breakpoint-suffix},
-        .-mt-#{$margin}#{$breakpoint-suffix},
-        .-my-#{$margin}#{$breakpoint-suffix} {
-            margin-top: -$value;
-        }
-
-        // Bottom
-        .-m-#{$margin}#{$breakpoint-suffix},
-        .-mb-#{$margin}#{$breakpoint-suffix},
-        .-my-#{$margin}#{$breakpoint-suffix} {
-            margin-bottom: -$value;
-        }
-
-        // Left
-        .-m-#{$margin}#{$breakpoint-suffix},
-        .-ml-#{$margin}#{$breakpoint-suffix},
-        .-mx-#{$margin}#{$breakpoint-suffix} {
-            margin-left: -$value;
-        }
-
-        // Right
-        .-m-#{$margin}#{$breakpoint-suffix},
-        .-mr-#{$margin}#{$breakpoint-suffix},
-        .-mx-#{$margin}#{$breakpoint-suffix} {
-            margin-right: -$value;
-        }
+@include breakpoint-loop($negative-margin-variants) {
+    @each $key, $value in $margins {
+        @include create-classes(('.-m-#{$key}', '.-mt-#{$key}', '.-my-#{$key}'), margin-top, -$value, $negative-margin-variants);
+        @include create-classes(('.-m-#{$key}', '.-mb-#{$key}', '.-my-#{$key}'), margin-bottom, -$value, $negative-margin-variants);
+        @include create-classes(('.-m-#{$key}', '.-ml-#{$key}', '.-mx-#{$key}'), margin-left, -$value, $negative-margin-variants);
+        @include create-classes(('.-m-#{$key}', '.-mr-#{$key}', '.-mx-#{$key}'), margin-right, -$value, $negative-margin-variants);
     }
 }

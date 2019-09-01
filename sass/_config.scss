@@ -321,6 +321,8 @@ $margins: map-merge((
     auto: auto,
 ), $paddings) !default;
 
+$negative-margins: map-merge((), $paddings) !default;
+
 $borders: (
     0: 0,
     1: 1px,
@@ -635,3 +637,6 @@ $table-variants: responsive !default;
 $box-shadow-variants: responsive !default;
 $opacity-variants: responsive !default;
 $interactivity-variants: responsive !default;
+$padding-variants: responsive !default;
+$margin-variants: responsive !default;
+$negative-margin-variants: responsive !default;
