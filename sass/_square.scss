@@ -1,0 +1,6 @@
+@include breakpoint-loop($square-variants) {
+    @each $key, $value in $squares {
+        @include create-classes('.square-#{$key}', width, $value, $square-variants);
+        @include create-classes('.square-#{$key}', height, $value, $square-variants);
+    }
+}
