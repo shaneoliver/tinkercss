@@ -1,6 +1,6 @@
 @include breakpoint-loop($box-shadow-variants) {
     @each $key, $value in $shadows {
-        @include create-classes('.#{$key}', box-shadow, $value, $box-shadow-variants);
+        @include create-classes('.#{$key}', box-shadow, #{$value}, $box-shadow-variants);
 
         @each $color-key, $color-value in $shadow-colors {
             $shadow: str-replace($value, '0, 0, 0', '#{red($color-value)}, #{green($color-value)}, #{blue($color-value)}');
