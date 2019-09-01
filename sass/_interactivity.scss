@@ -1,8 +1,8 @@
 @include breakpoint-loop($interactivity-variants) {
     @include create-classes('.appearance-none', appearance, none, $interactivity-variants);
 
-    @each $key in $cursors {
-        @include create-classes('.cursor-#{$key}', cursor, $key, $interactivity-variants);
+    @each $key, $value in $cursors {
+        @include create-classes('.cursor-#{$key}', cursor, $value, $interactivity-variants);
     }
 
     @include create-classes('.outline-none', outline, 0, $interactivity-variants);

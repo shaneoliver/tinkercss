@@ -57342,32 +57342,32 @@ template {
           appearance: none;
 }
 
-.cursor-auto auto {
-  cursor: auto auto;
+.cursor-auto {
+  cursor: auto;
 }
 
-.cursor-default default {
-  cursor: default default;
+.cursor-default {
+  cursor: default;
 }
 
-.cursor-move move {
-  cursor: move move;
+.cursor-move {
+  cursor: move;
 }
 
-.cursor-not-allowed not-allowed {
-  cursor: not-allowed not-allowed;
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
-.cursor-pointer pointer {
-  cursor: pointer pointer;
+.cursor-pointer {
+  cursor: pointer;
 }
 
-.cursor-text text {
-  cursor: text text;
+.cursor-text {
+  cursor: text;
 }
 
-.cursor-wait wait {
-  cursor: wait wait;
+.cursor-wait {
+  cursor: wait;
 }
 
 .outline-none {
@@ -57433,32 +57433,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto auto\@sm {
-    cursor: auto auto;
+  .cursor-auto\@sm {
+    cursor: auto;
   }
 
-  .cursor-default default\@sm {
-    cursor: default default;
+  .cursor-default\@sm {
+    cursor: default;
   }
 
-  .cursor-move move\@sm {
-    cursor: move move;
+  .cursor-move\@sm {
+    cursor: move;
   }
 
-  .cursor-not-allowed not-allowed\@sm {
-    cursor: not-allowed not-allowed;
+  .cursor-not-allowed\@sm {
+    cursor: not-allowed;
   }
 
-  .cursor-pointer pointer\@sm {
-    cursor: pointer pointer;
+  .cursor-pointer\@sm {
+    cursor: pointer;
   }
 
-  .cursor-text text\@sm {
-    cursor: text text;
+  .cursor-text\@sm {
+    cursor: text;
   }
 
-  .cursor-wait wait\@sm {
-    cursor: wait wait;
+  .cursor-wait\@sm {
+    cursor: wait;
   }
 
   .outline-none\@sm {
@@ -57525,32 +57525,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto auto\@md {
-    cursor: auto auto;
+  .cursor-auto\@md {
+    cursor: auto;
   }
 
-  .cursor-default default\@md {
-    cursor: default default;
+  .cursor-default\@md {
+    cursor: default;
   }
 
-  .cursor-move move\@md {
-    cursor: move move;
+  .cursor-move\@md {
+    cursor: move;
   }
 
-  .cursor-not-allowed not-allowed\@md {
-    cursor: not-allowed not-allowed;
+  .cursor-not-allowed\@md {
+    cursor: not-allowed;
   }
 
-  .cursor-pointer pointer\@md {
-    cursor: pointer pointer;
+  .cursor-pointer\@md {
+    cursor: pointer;
   }
 
-  .cursor-text text\@md {
-    cursor: text text;
+  .cursor-text\@md {
+    cursor: text;
   }
 
-  .cursor-wait wait\@md {
-    cursor: wait wait;
+  .cursor-wait\@md {
+    cursor: wait;
   }
 
   .outline-none\@md {
@@ -57617,32 +57617,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto auto\@lg {
-    cursor: auto auto;
+  .cursor-auto\@lg {
+    cursor: auto;
   }
 
-  .cursor-default default\@lg {
-    cursor: default default;
+  .cursor-default\@lg {
+    cursor: default;
   }
 
-  .cursor-move move\@lg {
-    cursor: move move;
+  .cursor-move\@lg {
+    cursor: move;
   }
 
-  .cursor-not-allowed not-allowed\@lg {
-    cursor: not-allowed not-allowed;
+  .cursor-not-allowed\@lg {
+    cursor: not-allowed;
   }
 
-  .cursor-pointer pointer\@lg {
-    cursor: pointer pointer;
+  .cursor-pointer\@lg {
+    cursor: pointer;
   }
 
-  .cursor-text text\@lg {
-    cursor: text text;
+  .cursor-text\@lg {
+    cursor: text;
   }
 
-  .cursor-wait wait\@lg {
-    cursor: wait wait;
+  .cursor-wait\@lg {
+    cursor: wait;
   }
 
   .outline-none\@lg {
@@ -57709,32 +57709,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto auto\@xl {
-    cursor: auto auto;
+  .cursor-auto\@xl {
+    cursor: auto;
   }
 
-  .cursor-default default\@xl {
-    cursor: default default;
+  .cursor-default\@xl {
+    cursor: default;
   }
 
-  .cursor-move move\@xl {
-    cursor: move move;
+  .cursor-move\@xl {
+    cursor: move;
   }
 
-  .cursor-not-allowed not-allowed\@xl {
-    cursor: not-allowed not-allowed;
+  .cursor-not-allowed\@xl {
+    cursor: not-allowed;
   }
 
-  .cursor-pointer pointer\@xl {
-    cursor: pointer pointer;
+  .cursor-pointer\@xl {
+    cursor: pointer;
   }
 
-  .cursor-text text\@xl {
-    cursor: text text;
+  .cursor-text\@xl {
+    cursor: text;
   }
 
-  .cursor-wait wait\@xl {
-    cursor: wait wait;
+  .cursor-wait\@xl {
+    cursor: wait;
   }
 
   .outline-none\@xl {
@@ -57801,32 +57801,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto auto\@2xl {
-    cursor: auto auto;
+  .cursor-auto\@2xl {
+    cursor: auto;
   }
 
-  .cursor-default default\@2xl {
-    cursor: default default;
+  .cursor-default\@2xl {
+    cursor: default;
   }
 
-  .cursor-move move\@2xl {
-    cursor: move move;
+  .cursor-move\@2xl {
+    cursor: move;
   }
 
-  .cursor-not-allowed not-allowed\@2xl {
-    cursor: not-allowed not-allowed;
+  .cursor-not-allowed\@2xl {
+    cursor: not-allowed;
   }
 
-  .cursor-pointer pointer\@2xl {
-    cursor: pointer pointer;
+  .cursor-pointer\@2xl {
+    cursor: pointer;
   }
 
-  .cursor-text text\@2xl {
-    cursor: text text;
+  .cursor-text\@2xl {
+    cursor: text;
   }
 
-  .cursor-wait wait\@2xl {
-    cursor: wait wait;
+  .cursor-wait\@2xl {
+    cursor: wait;
   }
 
   .outline-none\@2xl {
