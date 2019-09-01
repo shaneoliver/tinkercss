@@ -1,8 +1,8 @@
 @include breakpoint-loop($table-variants) {
-    @each $value in (collapse, separate) {
-        @include create-classes('.border-#{$value}', border-collapse, $value, $table-variants);
+    @each $key, $value in (collapse, separate) {
+        @include create-classes('.border-#{$key}', border-collapse, $value, $table-variants);
     }
-    @each $value in (auto, fixed) {
-        @include create-classes('.table-#{$value}', table-layout, $value, $table-variants);
+    @each $key, $value in (auto, fixed) {
+        @include create-classes('.table-#{$key}', table-layout, $value, $table-variants);
     }
 }

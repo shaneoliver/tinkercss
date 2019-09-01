@@ -1,6 +1,6 @@
 @include breakpoint-loop($object-fit-variants) {
-    @each $value in $object-fits {
-        @include create-classes('.object-#{$value}', object-fit, $value, $object-fit-variants);
+    @each $key, $value in $object-fits {
+        @include create-classes('.object-#{$key}', object-fit, $value, $object-fit-variants);
     }
 }
 

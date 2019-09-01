@@ -1,6 +1,6 @@
 @include breakpoint-loop($position-variants) {
-    @each $value in $positions {
-        @include create-classes('.position-#{$value}', position, $value, $position-variants);
+    @each $key, $value in $positions {
+        @include create-classes('.position-#{$key}', position, $value, $position-variants);
     }
 
     @include create-classes(('.pin','.pin-t','.pin-y'), top, 0, $position-variants);

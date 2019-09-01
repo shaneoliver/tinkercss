@@ -1,9 +1,9 @@
 @include breakpoint-loop($background-variants) {
-    @each $value in $background-attachments {
-        @include create-classes('.bg-#{$value}', background-attachment, $value, $background-variants);
+    @each $key, $value in $background-attachments {
+        @include create-classes('.bg-#{$key}', background-attachment, $value, $background-variants);
     }
-    @each $value in $background-sizes {
-        @include create-classes('.bg-#{$value}', background-size, $value, $background-variants);
+    @each $key, $value in $background-sizes {
+        @include create-classes('.bg-#{$key}', background-size, $value, $background-variants);
     }
     @each $key, $value in $background-positions {
         @include create-classes('.bg-#{$key}', background-position, $value, $background-variants);

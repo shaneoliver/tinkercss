@@ -1,8 +1,8 @@
 @include breakpoint-loop($overflow-variants) {
-    @each $value in $overflows {
-        @include create-classes('.overflow-#{$value}', overflow, $value, $overflow-variants);
-        @include create-classes('.overflow-#{$value}-x', overflow-x, $value, $overflow-variants);
-        @include create-classes('.overflow-#{$value}-y', overflow-y, $value, $overflow-variants);
+    @each $key, $value in $overflows {
+        @include create-classes('.overflow-#{$key}', overflow, $value, $overflow-variants);
+        @include create-classes('.overflow-#{$key}-x', overflow-x, $value, $overflow-variants);
+        @include create-classes('.overflow-#{$key}-y', overflow-y, $value, $overflow-variants);
     }
 
     @include create-classes('.scrolling-touch', -webkit-overflow-scrolling, touch, $overflow-variants);

@@ -1,5 +1,5 @@
 @include breakpoint-loop($z-index-variants) {
-    @each $value in $z-indexes {
-        @include create-classes('.z-#{$value}', z-index, $value, $z-index-variants);
+    @each $key, $value in $z-indexes {
+        @include create-classes('.z-#{$key}', z-index, $value, $z-index-variants);
     }
 }

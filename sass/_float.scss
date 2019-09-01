@@ -1,6 +1,6 @@
 @include breakpoint-loop($float-variants) {
-    @each $value in $floats {
-        @include create-classes('.float-#{$value}', float, $value, $float-variants);
+    @each $key, $value in $floats {
+        @include create-classes('.float-#{$key}', float, $value, $float-variants);
     }
 
     @include create-classes('.clearfix', content, '', $float-variants, '::after');

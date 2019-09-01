@@ -57342,32 +57342,32 @@ template {
           appearance: none;
 }
 
-.cursor-auto {
-  cursor: auto;
+.cursor-auto auto {
+  cursor: auto auto;
 }
 
-.cursor-default {
-  cursor: default;
+.cursor-default default {
+  cursor: default default;
 }
 
-.cursor-move {
-  cursor: move;
+.cursor-move move {
+  cursor: move move;
 }
 
-.cursor-not-allowed {
-  cursor: not-allowed;
+.cursor-not-allowed not-allowed {
+  cursor: not-allowed not-allowed;
 }
 
-.cursor-pointer {
-  cursor: pointer;
+.cursor-pointer pointer {
+  cursor: pointer pointer;
 }
 
-.cursor-text {
-  cursor: text;
+.cursor-text text {
+  cursor: text text;
 }
 
-.cursor-wait {
-  cursor: wait;
+.cursor-wait wait {
+  cursor: wait wait;
 }
 
 .outline-none {
@@ -57433,32 +57433,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto\@sm {
-    cursor: auto;
+  .cursor-auto auto\@sm {
+    cursor: auto auto;
   }
 
-  .cursor-default\@sm {
-    cursor: default;
+  .cursor-default default\@sm {
+    cursor: default default;
   }
 
-  .cursor-move\@sm {
-    cursor: move;
+  .cursor-move move\@sm {
+    cursor: move move;
   }
 
-  .cursor-not-allowed\@sm {
-    cursor: not-allowed;
+  .cursor-not-allowed not-allowed\@sm {
+    cursor: not-allowed not-allowed;
   }
 
-  .cursor-pointer\@sm {
-    cursor: pointer;
+  .cursor-pointer pointer\@sm {
+    cursor: pointer pointer;
   }
 
-  .cursor-text\@sm {
-    cursor: text;
+  .cursor-text text\@sm {
+    cursor: text text;
   }
 
-  .cursor-wait\@sm {
-    cursor: wait;
+  .cursor-wait wait\@sm {
+    cursor: wait wait;
   }
 
   .outline-none\@sm {
@@ -57525,32 +57525,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto\@md {
-    cursor: auto;
+  .cursor-auto auto\@md {
+    cursor: auto auto;
   }
 
-  .cursor-default\@md {
-    cursor: default;
+  .cursor-default default\@md {
+    cursor: default default;
   }
 
-  .cursor-move\@md {
-    cursor: move;
+  .cursor-move move\@md {
+    cursor: move move;
   }
 
-  .cursor-not-allowed\@md {
-    cursor: not-allowed;
+  .cursor-not-allowed not-allowed\@md {
+    cursor: not-allowed not-allowed;
   }
 
-  .cursor-pointer\@md {
-    cursor: pointer;
+  .cursor-pointer pointer\@md {
+    cursor: pointer pointer;
   }
 
-  .cursor-text\@md {
-    cursor: text;
+  .cursor-text text\@md {
+    cursor: text text;
   }
 
-  .cursor-wait\@md {
-    cursor: wait;
+  .cursor-wait wait\@md {
+    cursor: wait wait;
   }
 
   .outline-none\@md {
@@ -57617,32 +57617,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto\@lg {
-    cursor: auto;
+  .cursor-auto auto\@lg {
+    cursor: auto auto;
   }
 
-  .cursor-default\@lg {
-    cursor: default;
+  .cursor-default default\@lg {
+    cursor: default default;
   }
 
-  .cursor-move\@lg {
-    cursor: move;
+  .cursor-move move\@lg {
+    cursor: move move;
   }
 
-  .cursor-not-allowed\@lg {
-    cursor: not-allowed;
+  .cursor-not-allowed not-allowed\@lg {
+    cursor: not-allowed not-allowed;
   }
 
-  .cursor-pointer\@lg {
-    cursor: pointer;
+  .cursor-pointer pointer\@lg {
+    cursor: pointer pointer;
   }
 
-  .cursor-text\@lg {
-    cursor: text;
+  .cursor-text text\@lg {
+    cursor: text text;
   }
 
-  .cursor-wait\@lg {
-    cursor: wait;
+  .cursor-wait wait\@lg {
+    cursor: wait wait;
   }
 
   .outline-none\@lg {
@@ -57709,32 +57709,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto\@xl {
-    cursor: auto;
+  .cursor-auto auto\@xl {
+    cursor: auto auto;
   }
 
-  .cursor-default\@xl {
-    cursor: default;
+  .cursor-default default\@xl {
+    cursor: default default;
   }
 
-  .cursor-move\@xl {
-    cursor: move;
+  .cursor-move move\@xl {
+    cursor: move move;
   }
 
-  .cursor-not-allowed\@xl {
-    cursor: not-allowed;
+  .cursor-not-allowed not-allowed\@xl {
+    cursor: not-allowed not-allowed;
   }
 
-  .cursor-pointer\@xl {
-    cursor: pointer;
+  .cursor-pointer pointer\@xl {
+    cursor: pointer pointer;
   }
 
-  .cursor-text\@xl {
-    cursor: text;
+  .cursor-text text\@xl {
+    cursor: text text;
   }
 
-  .cursor-wait\@xl {
-    cursor: wait;
+  .cursor-wait wait\@xl {
+    cursor: wait wait;
   }
 
   .outline-none\@xl {
@@ -57801,32 +57801,32 @@ template {
             appearance: none;
   }
 
-  .cursor-auto\@2xl {
-    cursor: auto;
+  .cursor-auto auto\@2xl {
+    cursor: auto auto;
   }
 
-  .cursor-default\@2xl {
-    cursor: default;
+  .cursor-default default\@2xl {
+    cursor: default default;
   }
 
-  .cursor-move\@2xl {
-    cursor: move;
+  .cursor-move move\@2xl {
+    cursor: move move;
   }
 
-  .cursor-not-allowed\@2xl {
-    cursor: not-allowed;
+  .cursor-not-allowed not-allowed\@2xl {
+    cursor: not-allowed not-allowed;
   }
 
-  .cursor-pointer\@2xl {
-    cursor: pointer;
+  .cursor-pointer pointer\@2xl {
+    cursor: pointer pointer;
   }
 
-  .cursor-text\@2xl {
-    cursor: text;
+  .cursor-text text\@2xl {
+    cursor: text text;
   }
 
-  .cursor-wait\@2xl {
-    cursor: wait;
+  .cursor-wait wait\@2xl {
+    cursor: wait wait;
   }
 
   .outline-none\@2xl {
@@ -68180,112 +68180,6 @@ template {
   }
 }
 
-.border-collapse {
-  border-collapse: collapse;
-}
-
-.border-separate {
-  border-collapse: separate;
-}
-
-.table-auto {
-  table-layout: auto;
-}
-
-.table-fixed {
-  table-layout: fixed;
-}
-
-@media (min-width: 576px) {
-  .border-collapse\@sm {
-    border-collapse: collapse;
-  }
-
-  .border-separate\@sm {
-    border-collapse: separate;
-  }
-
-  .table-auto\@sm {
-    table-layout: auto;
-  }
-
-  .table-fixed\@sm {
-    table-layout: fixed;
-  }
-}
-
-@media (min-width: 768px) {
-  .border-collapse\@md {
-    border-collapse: collapse;
-  }
-
-  .border-separate\@md {
-    border-collapse: separate;
-  }
-
-  .table-auto\@md {
-    table-layout: auto;
-  }
-
-  .table-fixed\@md {
-    table-layout: fixed;
-  }
-}
-
-@media (min-width: 990px) {
-  .border-collapse\@lg {
-    border-collapse: collapse;
-  }
-
-  .border-separate\@lg {
-    border-collapse: separate;
-  }
-
-  .table-auto\@lg {
-    table-layout: auto;
-  }
-
-  .table-fixed\@lg {
-    table-layout: fixed;
-  }
-}
-
-@media (min-width: 1200px) {
-  .border-collapse\@xl {
-    border-collapse: collapse;
-  }
-
-  .border-separate\@xl {
-    border-collapse: separate;
-  }
-
-  .table-auto\@xl {
-    table-layout: auto;
-  }
-
-  .table-fixed\@xl {
-    table-layout: fixed;
-  }
-}
-
-@media (min-width: 1440px) {
-  .border-collapse\@2xl {
-    border-collapse: collapse;
-  }
-
-  .border-separate\@2xl {
-    border-collapse: separate;
-  }
-
-  .table-auto\@2xl {
-    table-layout: auto;
-  }
-
-  .table-fixed\@2xl {
-    table-layout: fixed;
-  }
-}
-
 .transition-fast {
   transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -69404,239 +69298,239 @@ template {
   }
 }
 
-.list-decimal {
-  list-style-type: decimal;
+.list-decimal decimal {
+  list-style-type: decimal decimal;
 }
 
-.list-disc {
-  list-style-type: disc;
+.list-disc disc {
+  list-style-type: disc disc;
 }
 
-.list-inside {
-  list-style-type: inside;
+.list-inside inside {
+  list-style-type: inside inside;
 }
 
-.list-none {
-  list-style-type: none;
+.list-none none {
+  list-style-type: none none;
 }
 
-.list-outside {
-  list-style-type: outside;
+.list-outside outside {
+  list-style-type: outside outside;
 }
 
 @media (min-width: 576px) {
-  .list-decimal\@sm {
-    list-style-type: decimal;
+  .list-decimal decimal\@sm {
+    list-style-type: decimal decimal;
   }
 
-  .list-disc\@sm {
-    list-style-type: disc;
+  .list-disc disc\@sm {
+    list-style-type: disc disc;
   }
 
-  .list-inside\@sm {
-    list-style-type: inside;
+  .list-inside inside\@sm {
+    list-style-type: inside inside;
   }
 
-  .list-none\@sm {
-    list-style-type: none;
+  .list-none none\@sm {
+    list-style-type: none none;
   }
 
-  .list-outside\@sm {
-    list-style-type: outside;
+  .list-outside outside\@sm {
+    list-style-type: outside outside;
   }
 }
 
 @media (min-width: 768px) {
-  .list-decimal\@md {
-    list-style-type: decimal;
+  .list-decimal decimal\@md {
+    list-style-type: decimal decimal;
   }
 
-  .list-disc\@md {
-    list-style-type: disc;
+  .list-disc disc\@md {
+    list-style-type: disc disc;
   }
 
-  .list-inside\@md {
-    list-style-type: inside;
+  .list-inside inside\@md {
+    list-style-type: inside inside;
   }
 
-  .list-none\@md {
-    list-style-type: none;
+  .list-none none\@md {
+    list-style-type: none none;
   }
 
-  .list-outside\@md {
-    list-style-type: outside;
+  .list-outside outside\@md {
+    list-style-type: outside outside;
   }
 }
 
 @media (min-width: 990px) {
-  .list-decimal\@lg {
-    list-style-type: decimal;
+  .list-decimal decimal\@lg {
+    list-style-type: decimal decimal;
   }
 
-  .list-disc\@lg {
-    list-style-type: disc;
+  .list-disc disc\@lg {
+    list-style-type: disc disc;
   }
 
-  .list-inside\@lg {
-    list-style-type: inside;
+  .list-inside inside\@lg {
+    list-style-type: inside inside;
   }
 
-  .list-none\@lg {
-    list-style-type: none;
+  .list-none none\@lg {
+    list-style-type: none none;
   }
 
-  .list-outside\@lg {
-    list-style-type: outside;
+  .list-outside outside\@lg {
+    list-style-type: outside outside;
   }
 }
 
 @media (min-width: 1200px) {
-  .list-decimal\@xl {
-    list-style-type: decimal;
+  .list-decimal decimal\@xl {
+    list-style-type: decimal decimal;
   }
 
-  .list-disc\@xl {
-    list-style-type: disc;
+  .list-disc disc\@xl {
+    list-style-type: disc disc;
   }
 
-  .list-inside\@xl {
-    list-style-type: inside;
+  .list-inside inside\@xl {
+    list-style-type: inside inside;
   }
 
-  .list-none\@xl {
-    list-style-type: none;
+  .list-none none\@xl {
+    list-style-type: none none;
   }
 
-  .list-outside\@xl {
-    list-style-type: outside;
+  .list-outside outside\@xl {
+    list-style-type: outside outside;
   }
 }
 
 @media (min-width: 1440px) {
-  .list-decimal\@2xl {
-    list-style-type: decimal;
+  .list-decimal decimal\@2xl {
+    list-style-type: decimal decimal;
   }
 
-  .list-disc\@2xl {
-    list-style-type: disc;
+  .list-disc disc\@2xl {
+    list-style-type: disc disc;
   }
 
-  .list-inside\@2xl {
-    list-style-type: inside;
+  .list-inside inside\@2xl {
+    list-style-type: inside inside;
   }
 
-  .list-none\@2xl {
-    list-style-type: none;
+  .list-none none\@2xl {
+    list-style-type: none none;
   }
 
-  .list-outside\@2xl {
-    list-style-type: outside;
+  .list-outside outside\@2xl {
+    list-style-type: outside outside;
   }
 }
 
-.text-center {
-  text-align: center;
+.text-center center {
+  text-align: center center;
 }
 
-.text-justify {
-  text-align: justify;
+.text-justify justify {
+  text-align: justify justify;
 }
 
-.text-left {
-  text-align: left;
+.text-left left {
+  text-align: left left;
 }
 
-.text-right {
-  text-align: right;
+.text-right right {
+  text-align: right right;
 }
 
 @media (min-width: 576px) {
-  .text-center\@sm {
-    text-align: center;
+  .text-center center\@sm {
+    text-align: center center;
   }
 
-  .text-justify\@sm {
-    text-align: justify;
+  .text-justify justify\@sm {
+    text-align: justify justify;
   }
 
-  .text-left\@sm {
-    text-align: left;
+  .text-left left\@sm {
+    text-align: left left;
   }
 
-  .text-right\@sm {
-    text-align: right;
+  .text-right right\@sm {
+    text-align: right right;
   }
 }
 
 @media (min-width: 768px) {
-  .text-center\@md {
-    text-align: center;
+  .text-center center\@md {
+    text-align: center center;
   }
 
-  .text-justify\@md {
-    text-align: justify;
+  .text-justify justify\@md {
+    text-align: justify justify;
   }
 
-  .text-left\@md {
-    text-align: left;
+  .text-left left\@md {
+    text-align: left left;
   }
 
-  .text-right\@md {
-    text-align: right;
+  .text-right right\@md {
+    text-align: right right;
   }
 }
 
 @media (min-width: 990px) {
-  .text-center\@lg {
-    text-align: center;
+  .text-center center\@lg {
+    text-align: center center;
   }
 
-  .text-justify\@lg {
-    text-align: justify;
+  .text-justify justify\@lg {
+    text-align: justify justify;
   }
 
-  .text-left\@lg {
-    text-align: left;
+  .text-left left\@lg {
+    text-align: left left;
   }
 
-  .text-right\@lg {
-    text-align: right;
+  .text-right right\@lg {
+    text-align: right right;
   }
 }
 
 @media (min-width: 1200px) {
-  .text-center\@xl {
-    text-align: center;
+  .text-center center\@xl {
+    text-align: center center;
   }
 
-  .text-justify\@xl {
-    text-align: justify;
+  .text-justify justify\@xl {
+    text-align: justify justify;
   }
 
-  .text-left\@xl {
-    text-align: left;
+  .text-left left\@xl {
+    text-align: left left;
   }
 
-  .text-right\@xl {
-    text-align: right;
+  .text-right right\@xl {
+    text-align: right right;
   }
 }
 
 @media (min-width: 1440px) {
-  .text-center\@2xl {
-    text-align: center;
+  .text-center center\@2xl {
+    text-align: center center;
   }
 
-  .text-justify\@2xl {
-    text-align: justify;
+  .text-justify justify\@2xl {
+    text-align: justify justify;
   }
 
-  .text-left\@2xl {
-    text-align: left;
+  .text-left left\@2xl {
+    text-align: left left;
   }
 
-  .text-right\@2xl {
-    text-align: right;
+  .text-right right\@2xl {
+    text-align: right right;
   }
 }
 

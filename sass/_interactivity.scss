@@ -1,5 +1,4 @@
 @include breakpoint-loop($interactivity-variants) {
-
     @include create-classes('.appearance-none', appearance, none, $interactivity-variants);
 
     @each $key in $cursors {
@@ -15,7 +14,7 @@
     @include create-classes('.resize-y', resize, vertical, $interactivity-variants);
     @include create-classes('.resize-x', resize, horizontal, $interactivity-variants);
 
-    @each $value in (none, text, all, auto) {
-        @include create-classes('.select-#{$value}', user-select, $value, $interactivity-variants);
+    @each $key, $value in $user-selects {
+        @include create-classes('.select-#{$key}', user-select, $value, $interactivity-variants);
     }
 }

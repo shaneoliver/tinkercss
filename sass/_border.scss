@@ -18,6 +18,5 @@
         @include create-classes(('.rounded-#{$key}', '.rounded-t-#{$key}', '.rounded-tr-#{$key}'), border-top-right-radius, $value, $border-variants);
         @include create-classes(('.rounded-#{$key}', '.rounded-b-#{$key}', '.rounded-bl-#{$key}'), border-bottom-left-radius, $value, $border-variants);
         @include create-classes(('.rounded-#{$key}', '.rounded-b-#{$key}', '.rounded-br-#{$key}'), border-bottom-right-radius, $value, $border-variants);
-
     }
 }
