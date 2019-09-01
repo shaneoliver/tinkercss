@@ -202,8 +202,8 @@ $colors: (
     'gray-600': $gray-600,
     'gray-700': $gray-700,
     'gray-800': $gray-800,
-    'gray-900': $gray-900,
     'black'   : $black,
+    'gray-900': $gray-900,
 ) !default;
 
 $shadow-colors: (
@@ -704,6 +704,12 @@ $whitespaces: (
     pre-wrap: pre-wrap,
 ) !default;
 
+$transitions: (
+    transition-fast: all .15s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transition-slow: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+);
+
 // Variants
 /*
  responsive, group-hover, focus-within, first, last, odd, even, hover, focus, active, visited, disabled
@@ -747,3 +753,4 @@ $whitespace-variants: responsive !default;
 $word-break-variants: responsive !default;
 $offset-variants: responsive !default;
 $square-variants: responsive !default;
+$transition-variants: responsive !default;

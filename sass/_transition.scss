@@ -1,0 +1,5 @@
+@include breakpoint-loop($transition-variants) {
+    @each $key, $value in $transitions {
+        @include create-classes('.#{$key}', transition, $value, $transition-variants);
+    }
+}
