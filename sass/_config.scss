@@ -88,6 +88,7 @@ $cyan-600: #1592A6 !default;
 $cyan-700: #0E616E !default;
 $cyan-800: #0A4953 !default;
 $cyan-900: #073137 !default;
+$white: #FFFFFF !default;
 $gray-50: hsl(210, 7%, 99%) !default;
 $gray-100: #F0F1F2 !default;
 $gray-200: #DADDE0 !default;
@@ -98,6 +99,7 @@ $gray-600: #5F6974 !default;
 $gray-700: #40464D !default;
 $gray-800: #30353A !default;
 $gray-900: #202327 !default;
+$black: #000000 !default;
 
 $colors: (
     'blue-100': $blue-100,
@@ -190,7 +192,8 @@ $colors: (
     'cyan-700': $cyan-700,
     'cyan-800': $cyan-800,
     'cyan-900': $cyan-900,
-    'gray-50': $gray-50,
+    'white'   : $white, 
+    'gray-50' : $gray-50,
     'gray-100': $gray-100,
     'gray-200': $gray-200,
     'gray-300': $gray-300,
@@ -200,6 +203,7 @@ $colors: (
     'gray-700': $gray-700,
     'gray-800': $gray-800,
     'gray-900': $gray-900,
+    'black'   : $black,
 ) !default;
 
 $shadow-colors: (
@@ -488,7 +492,7 @@ $line-heights: (
 ) !default;
 
 $widths: (
-    w-0: 0,
+    w-0: 0px,
     w-1: 1 * .25rem,
     w-2: 2 * .25rem,
     w-3: 3 * .25rem,
@@ -509,6 +513,26 @@ $widths: (
     w-px: 1px,
     w-full: 100%,
     w-screen: 100vw,
+) !default;
+
+$squares: (
+    0: 0px,
+    1: 1 * .25rem,
+    2: 2 * .25rem,
+    3: 3 * .25rem,
+    4: 4 * .25rem,
+    5: 5 * .25rem,
+    6: 6 * .25rem,
+    7: 7 * .25rem,
+    8: 8 * .25rem,
+    9: 9 * .25rem,
+    10: 10 * .25rem,
+    11: 11 * .25rem,
+    12: 12 * .25rem,
+    13: 13 * .25rem,
+    14: 14 * .25rem,
+    15: 15 * .25rem,
+    16: 16 * .25rem,
 ) !default;
 
 $blocks: (
@@ -532,6 +556,28 @@ $blocks: (
     block-90: 90%,
     block-95: 95%,
     block-100: 100%
+) !default;
+
+$offsets: (
+    offset-5: 5%,
+    offset-10: 10%,
+    offset-15: 15%,
+    offset-20: 20%,
+    offset-25: 25%,
+    offset-30: 30%,
+    offset-35: 35%,
+    offset-40: 40%,
+    offset-45: 45%,
+    offset-50: 50%,
+    offset-55: 55%,
+    offset-60: 60%,
+    offset-65: 65%,
+    offset-70: 70%,
+    offset-75: 75%,
+    offset-80: 80%,
+    offset-85: 85%,
+    offset-90: 90%,
+    offset-95: 95%,
 ) !default;
 
 $max-widths: (
@@ -613,10 +659,55 @@ $opacities: (
     0: 0,
 ) !default;
 
+$list-styles: (
+    none
+    disc
+    decimal
+    inside
+    outside
+) !default;
+
+$text-alignments: (
+    left
+    center
+    right
+    justify
+) !default;
+
+$decorations: (
+    underline: underline,
+    line-through: line-through,
+    no-underline: none,
+) !default;
+
+$text-transforms: (
+    uppercase: uppercase,
+    lowercase: lowercase,
+    capitalize: capitalize,
+    normal-case: none,
+) !default;
+
+$vertical-alignments: (
+    align-baseline: align-baseline,
+    align-top: align-top,
+    align-middle: align-middle,
+    align-bottom: align-bottom,
+    align-text-top: align-text-top,
+    align-text-bottom: align-text-bottom,
+) !default;
+
+$whitespaces: (
+    normal: normal,
+    nowrap: nowrap,
+    pre: pre,
+    pre-line: pre-line,
+    pre-wrap: pre-wrap,
+) !default;
+
 // Variants
 /*
  responsive, group-hover, focus-within, first, last, odd, even, hover, focus, active, visited, disabled
-*/
+ */
 $bg-color-variants: responsive, odd, even, hover !default;
 $text-color-variants: responsive, odd, even, hover !default;
 $placeholder-variants: responsive, focus !default;
@@ -634,9 +725,25 @@ $flex-variants: responsive !default;
 $width-variants: responsive !default;
 $height-variants: responsive !default;
 $table-variants: responsive !default;
-$box-shadow-variants: responsive !default;
+$box-shadow-variants: responsive hover !default;
 $opacity-variants: responsive !default;
 $interactivity-variants: responsive !default;
 $padding-variants: responsive !default;
 $margin-variants: responsive !default;
 $negative-margin-variants: responsive !default;
+$font-variants: responsive !default;
+$font-size-variants: responsive !default;
+$font-weight-variants: responsive !default;
+$letter-spacing-variants: responsive !default;
+$line-height-variants: responsive !default;
+$antialiasing-variants: responsive !default;
+$font-style-variants: responsive !default;
+$list-style-variants: responsive !default;
+$alignment-variants: responsive !default;
+$decoration-variants: responsive !default;
+$text-transform-variants: responsive !default;
+$vertical-alignment-variants: responsive !default;
+$whitespace-variants: responsive !default;
+$word-break-variants: responsive !default;
+$offset-variants: responsive !default;
+$square-variants: responsive !default;
