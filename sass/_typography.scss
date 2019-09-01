@@ -1,151 +1,88 @@
-@include breakpoint-loop() {
+@include breakpoint-loop($font-variants) {
     @each $key, $value in $fonts {
-        .font-#{$key}#{$breakpoint-suffix} {
-            font-family: #{$value};
-        }
+        @include create-classes('.font-#{$key}', font-family, $value, $font-variants);
     }
+}
 
+@include breakpoint-loop($font-size-variants) {
     @each $key, $value in $font-sizes {
-        .text-#{$key}#{$breakpoint-suffix} {
-            font-size: #{$value};
-        }
+        @include create-classes('.text-#{$key}', font-size, $value, $font-size-variants);
     }
+}
 
+@include breakpoint-loop($font-weight-variants) {
     @each $key, $value in $font-weights {
-        .font-#{$key}#{$breakpoint-suffix} {
-            font-weight: #{$value};
-        }
+        @include create-classes('.font-#{$key}', font-weight, $value, $font-weight-variants);
     }
+}
 
+@include breakpoint-loop($letter-spacing-variants) {
     @each $key, $value in $letter-spacings {
-        .spacing-#{$key}#{$breakpoint-suffix} {
-            letter-spacing: #{$value};
-        }
+        @include create-classes('.spacing-#{$key}', letter-spacing, $value, $letter-spacing-variants);
     }
+}
 
+@include breakpoint-loop($line-height-variants) {
     @each $key, $value in $line-heights {
-        .line-#{$key}#{$breakpoint-suffix} {
-            line-height: #{$value};
-        }
+        @include create-classes('.line-#{$key}', line-height, $value, $line-height-variants);
     }
+}
 
-    .antialiased#{$breakpoint-suffix} {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .subpixel-antialiased#{$breakpoint-suffix} {
-        -webkit-font-smoothing: auto;
-        -moz-osx-font-smoothing: auto;
-    }
+@include breakpoint-loop($antialiasing-variants) {
+    @include create-classes('.antialiased', -webkit-font-smoothing, antialiased, $antialiasing-variants);
+    @include create-classes('.antialiased', -moz-osx-font-smoothing, grayscale, $antialiasing-variants);
+    @include create-classes('.subpixel-antialiased', -webkit-font-smoothing, auto, $antialiasing-variants);
+    @include create-classes('.subpixel-antialiased', -moz-osx-font-smoothing, auto, $antialiasing-variants);
+}
 
-    .italic#{$breakpoint-suffix} {
-        font-style: italic;
-    }
-    .font-normal#{$breakpoint-suffix},
-    .not-italic#{$breakpoint-suffix} {
-        font-style: italic;
-    }
+@include breakpoint-loop($font-style-variants) {
+    @include create-classes('.italic', font-style, italic, $font-style-variants);
+    @include create-classes(('.font-normal', '.not-italic'), font-style, normal, $font-style-variants);
+}
 
-    .list-none#{$breakpoint-suffix} {
-        list-style-type: none;
+@include breakpoint-loop($list-style-variants) {
+    @each $key in $list-styles {
+        @include create-classes('.list-#{$key}', list-style-type, $key, $list-style-variants);
     }
-    .list-disc#{$breakpoint-suffix} {
-        list-style-type: disc;
-    }
-    .list-decimal#{$breakpoint-suffix} {
-        list-style-type: decimal;
-    }
-    .list-inside#{$breakpoint-suffix} {
-        list-style-position: inside;
-    }
-    .list-outside#{$breakpoint-suffix} {
-        list-style-position: outside;
-    }
+}
 
-    .text-left#{$breakpoint-suffix} {
-        text-align: left;
+@include breakpoint-loop($alignment-variants) {
+    @each $key in $text-alignments {
+        @include create-classes('.text-#{$key}', text-align, $key, $alignment-variants);
     }
-    .text-center#{$breakpoint-suffix} {
-        text-align: center;
-    }
-    .text-right#{$breakpoint-suffix} {
-        text-align: right;
-    }
-    .text-justify#{$breakpoint-suffix} {
-        text-align: justify;
-    }
+}
 
-    .underline#{$breakpoint-suffix} {
-        text-decoration: underline;
+@include breakpoint-loop($decoration-variants) {
+    @each $key, $value in $decorations {
+        @include create-classes('.#{$key}', text-decoration, $value, $decoration-variants);
     }
-    .line-through#{$breakpoint-suffix} {
-        text-decoration: line-through;
-    }
-    .no-underline#{$breakpoint-suffix} {
-        text-decoration: none;
-    }
+}
 
-    .uppercase#{$breakpoint-suffix} {
-        text-transform: uppercase;
+@include breakpoint-loop($text-transform-variants) {
+    @each $key, $value in $text-transforms {
+        @include create-classes('.#{$key}', text-transform, $value, $text-transform-variants);
     }
-    .lowercase#{$breakpoint-suffix} {
-        text-transform: lowercase;
-    }
-    .capitalize#{$breakpoint-suffix} {
-        text-transform: capitalize;
-    }
-    .normal-case#{$breakpoint-suffix} {
-        text-transform: none;
-    }
+}
 
-    .align-baseline#{$breakpoint-suffix} {
-        vertical-align: baseline;
+@include breakpoint-loop($vertical-alignment-variants) {
+    @each $key, $value in $vertical-alignments {
+        @include create-classes('.#{$key}', vertical-align, $value, $vertical-alignment-variants);
     }
-    .align-top#{$breakpoint-suffix} {
-        vertical-align: top;
-    }
-    .align-middle#{$breakpoint-suffix} {
-        vertical-align: middle;
-    }
-    .align-bottom#{$breakpoint-suffix} {
-        vertical-align: bottom;
-    }
-    .align-text-top#{$breakpoint-suffix} {
-        vertical-align: text-top;
-    }
-    .align-text-bottom#{$breakpoint-suffix} {
-        vertical-align: text-bottom;
-    }
+}
 
-    .whitespace-normal#{$breakpoint-suffix} {
-        white-space: normal;
+@include breakpoint-loop($whitespace-variants) {
+    @each $key, $value in $whitespaces {
+        @include create-classes('.whitespace-#{$key}', white-space, $value, $whitespace-variants);
     }
-    .whitespace-no-wrap#{$breakpoint-suffix} {
-        white-space: nowrap;
-    }
-    .whitespace-pre#{$breakpoint-suffix}	 {
-        white-space: pre;
-    }
-    .whitespace-pre-line#{$breakpoint-suffix} {
-        white-space: pre-line;
-    }
-    .whitespace-pre-wrap#{$breakpoint-suffix} {
-        white-space: pre-wrap;
-    }
+}
 
-    .break-normal#{$breakpoint-suffix} {
-        word-break: normal;
-        overflow-wrap: normal
-    }
-    .break-words#{$breakpoint-suffix} {
-        overflow-wrap: break-word;
-    }
-    .break-all#{$breakpoint-suffix} {
-        word-break: break-all;
-    }
-    .truncate#{$breakpoint-suffix} {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap
-    }
+@include breakpoint-loop($word-break-variants) {
+    @include create-classes('.break-normal', word-break, normal, $word-break-variants);
+    @include create-classes('.break-normal', overflow-wrap, normal, $word-break-variants);
+    @include create-classes('.break-all', word-break, break-all, $word-break-variants);
+    @include create-classes('.break-words', overflow-wrap, break-word, $word-break-variants);
+
+    @include create-classes('.truncate', overflow, hidden, $word-break-variants);
+    @include create-classes('.truncate', text-overflow, ellipsis, $word-break-variants);
+    @include create-classes('.truncate', white-space, nowrap, $word-break-variants);
 }
