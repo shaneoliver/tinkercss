@@ -3,7 +3,7 @@
     @include create-classes('.appearance-none', appearance, none, $interactivity-variants);
 
     @each $key in $cursors {
-        @include create-classes('.cursor-.#{$key}', cursor, $key, $interactivity-variants);
+        @include create-classes('.cursor-#{$key}', cursor, $key, $interactivity-variants);
     }
 
     @include create-classes('.outline-none', outline, 0, $interactivity-variants);
